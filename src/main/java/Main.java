@@ -12,8 +12,11 @@ public class Main {
     private Connection connection;
     private Statement statement;
 
+    private PreparedStatement addProjectSt;
+    private PreparedStatement addDeveloperSt;
     private PreparedStatement deleteDeveloperSt;
-    private PreparedStatement selectSt;
+    private PreparedStatement addCustomerSt;
+
     private PreparedStatement updateSt;
 
     public Main() {
@@ -25,7 +28,11 @@ public class Main {
         try {
             connection = DriverManager.getConnection(connectionURL, user, pass);
             statement = connection.createStatement();
-           // selectSt = connection.prepareStatement("");
+            addProjectSt = connection.prepareStatement("insert into projects (ProjectName, description, cost) values (?, ?, ?);");
+            addDeveloperSt = connection.prepareStatement("insert into developers (firstName, secondaryName, age, gender, salary) values (?, ?, ?, ?, ?);");
+            addCustomerSt = connection.prepareStatement("insert into customers (CustomerName, StateOrPrivate) values (?, ?);");
+
+            // selectSt = connection.prepareStatement("");
 
         } catch (SQLException e) {
             e.printStackTrace();
@@ -33,11 +40,10 @@ public class Main {
     }
 
 
+    public void getSummOfProjectSalary(int projNumber) {
 
-    public void getSummOfProjectSalary (int projNumber) {
-
-        String sql = "SELECT  project_developer.id_project as id_proj , sum(developers.salary) AS SummOfSalary FROM developers, project_developer " +
-                    "WHERE developers.id_dev IN ( SELECT DISTINCT project_developer.id_dev where project_developer.id_project = " + projNumber + ");";
+        String sql = "SELECT developer_projects.id_project as id_proj , sum(developers.salary) AS SummOfSalary FROM developers, developer_projects " +
+                "WHERE developers.id_dev IN ( SELECT DISTINCT developer_projects.id_dev where developer_projects.id_project = " + projNumber + ");";
         //String sql = "select * from developers;";
 
 
@@ -45,10 +51,10 @@ public class Main {
         try {
             rs = statement.executeQuery(sql);
 
-            while (rs.next()){
+            while (rs.next()) {
                 int id = rs.getInt("id_proj");
-                int sum  =  rs.getInt("SummOfSalary");
-                System.out.println("project id = " + id + " Summ of salary = " +sum);
+                int sum = rs.getInt("SummOfSalary");
+                System.out.println("project id = " + id + " Summ of salary = " + sum);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -62,7 +68,7 @@ public class Main {
     }
 
     public void getProjectDevelopers(int projNumber) {
-        String sql ="SELECT DISTINCT developers.firstName, developers.secondaryName " +
+        String sql = "SELECT DISTINCT developers.firstName, developers.secondaryName " +
                 "FROM developers, developer_projects " +
                 "WHERE  developers.id_dev IN (" +
                 "SELECT developer_projects.id_dev " +
@@ -70,7 +76,8 @@ public class Main {
 
         getDevelopersList(sql);
     }
-    public void getJavaDevelopers(){
+
+    public void getJavaDevelopers() {
         String sql = "select DISTINCT developers.firstName, developers.secondaryName " +
                 "from developers, developer_skill " +
                 "where  developers.id_dev IN (" +
@@ -79,7 +86,7 @@ public class Main {
         getDevelopersList(sql);
     }
 
-    public void getMiddleDevelopers(){
+    public void getMiddleDevelopers() {
         String sql = "select DISTINCT developers.firstName, developers.secondaryName " +
                 "from developers, developer_skill " +
                 "where  developers.id_dev IN (" +
@@ -88,43 +95,109 @@ public class Main {
         getDevelopersList(sql);
     }
 
-        public void getDevelopersList (String sql) {
-        List <String> result = new ArrayList<>();
+    public void getDevelopersList(String sql) {
+        List<String> result = new ArrayList<>();
 
         ResultSet rs = null;
         try {
-            rs  = statement.executeQuery(sql);
-            while (rs.next()){
+            rs = statement.executeQuery(sql);
+            while (rs.next()) {
                 result.add(rs.getString("firstName") + " " + rs.getString("secondaryName"));
             }
         } catch (SQLException e) {
             e.printStackTrace();
-        }
-        finally {
+        } finally {
             try {
                 rs.close();
             } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
-        for (String asd: result
-             ) {
+        for (String asd : result
+                ) {
             System.out.println(asd);
-        };
+        }
     }
 
+    public void getProjectsInfo() {
+        List<String> result = new ArrayList<>();
+
+        String sql = "select cost, ProjectName, count(developer_projects.id_dev) as DevelopersCount " +
+                "from projects, developer_projects " +
+                "where projects.id_project = developer_projects.id_project " +
+                "group by projects.id_project;";
+        ResultSet rs = null;
+        try {
+            rs = statement.executeQuery(sql);
+            while (rs.next()) {
+                result.add(rs.getInt("cost") + "\t- \t" + rs.getString("ProjectName") + " - " + rs.getInt("DevelopersCount") );
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                rs.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        for (String asd : result
+                ) {
+            System.out.println(asd);
+        }
+    }
+
+
+
+    public void addNewProject (String projectName, String description, int cost){
+        try {
+            addProjectSt.setString(1, projectName);
+            addProjectSt.setString(2, description);
+            addProjectSt.setInt(3, cost);
+            addProjectSt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void addNewDeveloper (String firstName, String secondaryName, int age, String gender, int salary){
+        try {
+            addDeveloperSt.setString(1, firstName);
+            addDeveloperSt.setString(2, secondaryName);
+            addDeveloperSt.setInt(3, age);
+            addDeveloperSt.setString(4, gender);
+            addDeveloperSt.setInt(5, salary);
+            addDeveloperSt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void addNewCustomer (String customerName, boolean stateOrPrivate){
+        try {
+            addCustomerSt.setString(1, customerName);
+            addCustomerSt.setBoolean(2, stateOrPrivate);
+            addCustomerSt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
 
     public static void main(String[] args) {
         Main storage = new Main();
         System.out.println("Вывод зарплаты всех разработчиков отдельного проекта:");
-        storage.getSummOfProjectSalary(2 );
+        storage.getSummOfProjectSalary(2);
         System.out.println("Вывод списка разработчиков отдельного проекта:");
         storage.getProjectDevelopers(2);
         System.out.println("Вывод списка всех Java разработчиков");
         storage.getJavaDevelopers();
         System.out.println("Вывод списка всех middle  разработчиков");
         storage.getMiddleDevelopers();
+        //storage.addNewProject("newTestProject", "testtest", 500);             //creates new project
+        //storage.addNewDeveloper("TestFirstName", "TestSecondary" , 22, "Male" , 600);       //creates new developer
+        //storage.addNewCustomer("Customer", true);           //creates new Customer
+        storage.getProjectsInfo();
     }
 
 }
