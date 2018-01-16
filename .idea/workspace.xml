@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0878219-e3c2-44fc-8927-9ed60fc0c96a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,20 +18,25 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="132" column="89" lean-forward="true" selection-start-line="132" selection-start-column="89" selection-end-line="132" selection-end-column="89" />
+            <state relative-caret-position="1870">
+              <caret line="215" column="34" lean-forward="false" selection-start-line="215" selection-start-column="34" selection-end-line="215" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1516133023308" expanded="true" signature="942:1013" ph=" INSERT statement (PROJECTS)" />
-                <marker date="1516133023308" expanded="true" signature="1075:1169" ph=" INSERT statement (DEVELOPERS)" />
-                <marker date="1516133023308" expanded="true" signature="1230:1297" ph=" INSERT statement (CUSTOMERS)" />
-                <marker date="1516133023308" expanded="true" signature="1528:1803" ph=" SELECT statement (PROJECT_DEVELOPER, DEVELOPERS)" />
-                <marker date="1516133023308" expanded="true" signature="1534:1616" ph=" SELECT statement" />
-                <marker date="1516133023308" expanded="true" signature="1534:1700" ph=" SELECT statement (PROJECT_DEVELOPER, DEVELOPERS)" />
-                <marker date="1516133023308" expanded="true" signature="1534:1803" ph=" SELECT statement" />
-                <marker date="1516133023308" expanded="true" signature="1830:1854" ph=" SELECT statement (DEVELOPERS)" />
-                <marker date="1516133023308" expanded="true" signature="1830:1855" ph=" SELECT statement (DEVELOPERS)" />
-                <marker date="1516133023308" expanded="true" signature="4502:4764" ph=" SELECT statement (PROJECTS, DEVELOPER_PROJECTS)" />
+                <element signature="method#getSummOfProjectSalary#0;class#Main#0" expanded="false" />
+                <element signature="method#getProjectDevelopers#0;class#Main#0" expanded="false" />
+                <element signature="method#getJavaDevelopers#0;class#Main#0" expanded="false" />
+                <element signature="method#getMiddleDevelopers#0;class#Main#0" expanded="false" />
+                <element signature="method#getDevelopersList#0;class#Main#0" expanded="false" />
+                <element signature="method#getProjectsInfo#0;class#Main#0" expanded="false" />
+                <marker date="1516136568748" expanded="true" signature="942:1013" ph=" INSERT statement (PROJECTS)" />
+                <marker date="1516136568748" expanded="true" signature="1075:1169" ph=" INSERT statement (DEVELOPERS)" />
+                <marker date="1516136568748" expanded="true" signature="1230:1297" ph=" INSERT statement (CUSTOMERS)" />
+                <marker date="1516136568748" expanded="true" signature="1362:1407" ph=" DELETE statement (DEVELOPER_SKILL)" />
+                <marker date="1516136568748" expanded="true" signature="1362:1633" ph=" DELETE statement (?)" />
+                <marker date="1516136568748" expanded="true" signature="1476:1524" ph=" DELETE statement (DEVELOPER_PROJECTS)" />
+                <marker date="1516136568748" expanded="true" signature="1593:1633" ph=" DELETE statement (DEVELOPERS)" />
+                <marker date="1516136568748" expanded="true" signature="1864:2139" ph=" SELECT statement (DEVELOPER_PROJECTS, DEVELOPERS)" />
+                <marker date="1516136568748" expanded="true" signature="4785:5047" ph=" SELECT statement (PROJECTS, DEVELOPER_PROJECTS)" />
               </folding>
             </state>
           </provider>
@@ -267,7 +270,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -279,7 +281,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32873806" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32873806" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -303,7 +305,18 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
+          <line>70</line>
+          <properties class="Main" method="getProjectDevelopers">
+            <option name="EMULATED" value="true" />
+          </properties>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -313,16 +326,21 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1516133023308" expanded="true" signature="942:1013" ph=" INSERT statement (PROJECTS)" />
-            <marker date="1516133023308" expanded="true" signature="1075:1169" ph=" INSERT statement (DEVELOPERS)" />
-            <marker date="1516133023308" expanded="true" signature="1230:1297" ph=" INSERT statement (CUSTOMERS)" />
-            <marker date="1516133023308" expanded="true" signature="1528:1803" ph=" SELECT statement (PROJECT_DEVELOPER, DEVELOPERS)" />
-            <marker date="1516133023308" expanded="true" signature="1534:1616" ph=" SELECT statement" />
-            <marker date="1516133023308" expanded="true" signature="1534:1700" ph=" SELECT statement (PROJECT_DEVELOPER, DEVELOPERS)" />
-            <marker date="1516133023308" expanded="true" signature="1534:1803" ph=" SELECT statement" />
-            <marker date="1516133023308" expanded="true" signature="1830:1854" ph=" SELECT statement (DEVELOPERS)" />
-            <marker date="1516133023308" expanded="true" signature="1830:1855" ph=" SELECT statement (DEVELOPERS)" />
-            <marker date="1516133023308" expanded="true" signature="4502:4764" ph=" SELECT statement (PROJECTS, DEVELOPER_PROJECTS)" />
+            <element signature="method#getSummOfProjectSalary#0;class#Main#0" expanded="false" />
+            <element signature="method#getProjectDevelopers#0;class#Main#0" expanded="false" />
+            <element signature="method#getJavaDevelopers#0;class#Main#0" expanded="false" />
+            <element signature="method#getMiddleDevelopers#0;class#Main#0" expanded="false" />
+            <element signature="method#getDevelopersList#0;class#Main#0" expanded="false" />
+            <element signature="method#getProjectsInfo#0;class#Main#0" expanded="false" />
+            <marker date="1516136568748" expanded="true" signature="942:1013" ph=" INSERT statement (PROJECTS)" />
+            <marker date="1516136568748" expanded="true" signature="1075:1169" ph=" INSERT statement (DEVELOPERS)" />
+            <marker date="1516136568748" expanded="true" signature="1230:1297" ph=" INSERT statement (CUSTOMERS)" />
+            <marker date="1516136568748" expanded="true" signature="1362:1407" ph=" DELETE statement (DEVELOPER_SKILL)" />
+            <marker date="1516136568748" expanded="true" signature="1362:1633" ph=" DELETE statement (?)" />
+            <marker date="1516136568748" expanded="true" signature="1476:1524" ph=" DELETE statement (DEVELOPER_PROJECTS)" />
+            <marker date="1516136568748" expanded="true" signature="1593:1633" ph=" DELETE statement (DEVELOPERS)" />
+            <marker date="1516136568748" expanded="true" signature="1864:2139" ph=" SELECT statement (DEVELOPER_PROJECTS, DEVELOPERS)" />
+            <marker date="1516136568748" expanded="true" signature="4785:5047" ph=" SELECT statement (PROJECTS, DEVELOPER_PROJECTS)" />
           </folding>
         </state>
       </provider>
@@ -341,16 +359,21 @@
           <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1516133023308" expanded="true" signature="942:1013" ph=" INSERT statement (PROJECTS)" />
-            <marker date="1516133023308" expanded="true" signature="1075:1169" ph=" INSERT statement (DEVELOPERS)" />
-            <marker date="1516133023308" expanded="true" signature="1230:1297" ph=" INSERT statement (CUSTOMERS)" />
-            <marker date="1516133023308" expanded="true" signature="1528:1803" ph=" SELECT statement (PROJECT_DEVELOPER, DEVELOPERS)" />
-            <marker date="1516133023308" expanded="true" signature="1534:1616" ph=" SELECT statement" />
-            <marker date="1516133023308" expanded="true" signature="1534:1700" ph=" SELECT statement (PROJECT_DEVELOPER, DEVELOPERS)" />
-            <marker date="1516133023308" expanded="true" signature="1534:1803" ph=" SELECT statement" />
-            <marker date="1516133023308" expanded="true" signature="1830:1854" ph=" SELECT statement (DEVELOPERS)" />
-            <marker date="1516133023308" expanded="true" signature="1830:1855" ph=" SELECT statement (DEVELOPERS)" />
-            <marker date="1516133023308" expanded="true" signature="4502:4764" ph=" SELECT statement (PROJECTS, DEVELOPER_PROJECTS)" />
+            <element signature="method#getSummOfProjectSalary#0;class#Main#0" expanded="false" />
+            <element signature="method#getProjectDevelopers#0;class#Main#0" expanded="false" />
+            <element signature="method#getJavaDevelopers#0;class#Main#0" expanded="false" />
+            <element signature="method#getMiddleDevelopers#0;class#Main#0" expanded="false" />
+            <element signature="method#getDevelopersList#0;class#Main#0" expanded="false" />
+            <element signature="method#getProjectsInfo#0;class#Main#0" expanded="false" />
+            <marker date="1516136568748" expanded="true" signature="942:1013" ph=" INSERT statement (PROJECTS)" />
+            <marker date="1516136568748" expanded="true" signature="1075:1169" ph=" INSERT statement (DEVELOPERS)" />
+            <marker date="1516136568748" expanded="true" signature="1230:1297" ph=" INSERT statement (CUSTOMERS)" />
+            <marker date="1516136568748" expanded="true" signature="1362:1407" ph=" DELETE statement (DEVELOPER_SKILL)" />
+            <marker date="1516136568748" expanded="true" signature="1362:1633" ph=" DELETE statement (?)" />
+            <marker date="1516136568748" expanded="true" signature="1476:1524" ph=" DELETE statement (DEVELOPER_PROJECTS)" />
+            <marker date="1516136568748" expanded="true" signature="1593:1633" ph=" DELETE statement (DEVELOPERS)" />
+            <marker date="1516136568748" expanded="true" signature="1864:2139" ph=" SELECT statement (DEVELOPER_PROJECTS, DEVELOPERS)" />
+            <marker date="1516136568748" expanded="true" signature="4785:5047" ph=" SELECT statement (PROJECTS, DEVELOPER_PROJECTS)" />
           </folding>
         </state>
       </provider>
@@ -374,20 +397,25 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Developer.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="132" column="89" lean-forward="true" selection-start-line="132" selection-start-column="89" selection-end-line="132" selection-end-column="89" />
+        <state relative-caret-position="1870">
+          <caret line="215" column="34" lean-forward="false" selection-start-line="215" selection-start-column="34" selection-end-line="215" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1516133023308" expanded="true" signature="942:1013" ph=" INSERT statement (PROJECTS)" />
-            <marker date="1516133023308" expanded="true" signature="1075:1169" ph=" INSERT statement (DEVELOPERS)" />
-            <marker date="1516133023308" expanded="true" signature="1230:1297" ph=" INSERT statement (CUSTOMERS)" />
-            <marker date="1516133023308" expanded="true" signature="1528:1803" ph=" SELECT statement (PROJECT_DEVELOPER, DEVELOPERS)" />
-            <marker date="1516133023308" expanded="true" signature="1534:1616" ph=" SELECT statement" />
-            <marker date="1516133023308" expanded="true" signature="1534:1700" ph=" SELECT statement (PROJECT_DEVELOPER, DEVELOPERS)" />
-            <marker date="1516133023308" expanded="true" signature="1534:1803" ph=" SELECT statement" />
-            <marker date="1516133023308" expanded="true" signature="1830:1854" ph=" SELECT statement (DEVELOPERS)" />
-            <marker date="1516133023308" expanded="true" signature="1830:1855" ph=" SELECT statement (DEVELOPERS)" />
-            <marker date="1516133023308" expanded="true" signature="4502:4764" ph=" SELECT statement (PROJECTS, DEVELOPER_PROJECTS)" />
+            <element signature="method#getSummOfProjectSalary#0;class#Main#0" expanded="false" />
+            <element signature="method#getProjectDevelopers#0;class#Main#0" expanded="false" />
+            <element signature="method#getJavaDevelopers#0;class#Main#0" expanded="false" />
+            <element signature="method#getMiddleDevelopers#0;class#Main#0" expanded="false" />
+            <element signature="method#getDevelopersList#0;class#Main#0" expanded="false" />
+            <element signature="method#getProjectsInfo#0;class#Main#0" expanded="false" />
+            <marker date="1516136568748" expanded="true" signature="942:1013" ph=" INSERT statement (PROJECTS)" />
+            <marker date="1516136568748" expanded="true" signature="1075:1169" ph=" INSERT statement (DEVELOPERS)" />
+            <marker date="1516136568748" expanded="true" signature="1230:1297" ph=" INSERT statement (CUSTOMERS)" />
+            <marker date="1516136568748" expanded="true" signature="1362:1407" ph=" DELETE statement (DEVELOPER_SKILL)" />
+            <marker date="1516136568748" expanded="true" signature="1362:1633" ph=" DELETE statement (?)" />
+            <marker date="1516136568748" expanded="true" signature="1476:1524" ph=" DELETE statement (DEVELOPER_PROJECTS)" />
+            <marker date="1516136568748" expanded="true" signature="1593:1633" ph=" DELETE statement (DEVELOPERS)" />
+            <marker date="1516136568748" expanded="true" signature="1864:2139" ph=" SELECT statement (DEVELOPER_PROJECTS, DEVELOPERS)" />
+            <marker date="1516136568748" expanded="true" signature="4785:5047" ph=" SELECT statement (PROJECTS, DEVELOPER_PROJECTS)" />
           </folding>
         </state>
       </provider>

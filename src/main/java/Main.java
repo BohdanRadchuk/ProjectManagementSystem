@@ -14,9 +14,9 @@ public class Main {
 
     private PreparedStatement addProjectSt;
     private PreparedStatement addDeveloperSt;
-    private PreparedStatement deleteDeveloperSt;
     private PreparedStatement addCustomerSt;
 
+    private PreparedStatement deleteDeveloperSt;
     private PreparedStatement updateSt;
 
     public Main() {
@@ -31,6 +31,9 @@ public class Main {
             addProjectSt = connection.prepareStatement("insert into projects (ProjectName, description, cost) values (?, ?, ?);");
             addDeveloperSt = connection.prepareStatement("insert into developers (firstName, secondaryName, age, gender, salary) values (?, ?, ?, ?, ?);");
             addCustomerSt = connection.prepareStatement("insert into customers (CustomerName, StateOrPrivate) values (?, ?);");
+            deleteDeveloperSt = connection.prepareStatement("delete from developer_skill where id_dev = ?;" +
+                                                                "delete from developer_projects where id_dev = ?;" +
+                                                                "delete from developers where id_dev = ?;");
 
             // selectSt = connection.prepareStatement("");
 
@@ -44,8 +47,6 @@ public class Main {
 
         String sql = "SELECT developer_projects.id_project as id_proj , sum(developers.salary) AS SummOfSalary FROM developers, developer_projects " +
                 "WHERE developers.id_dev IN ( SELECT DISTINCT developer_projects.id_dev where developer_projects.id_project = " + projNumber + ");";
-        //String sql = "select * from developers;";
-
 
         ResultSet rs = null;
         try {
@@ -183,6 +184,19 @@ public class Main {
         }
     }
 
+    public void deleteDeveloper ( int id){
+
+        try {
+            deleteDeveloperSt.setInt(1, id);
+            deleteDeveloperSt.setInt(2, id);
+            deleteDeveloperSt.setInt(3, id);
+            deleteDeveloperSt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
+
 
     public static void main(String[] args) {
         Main storage = new Main();
@@ -194,10 +208,12 @@ public class Main {
         storage.getJavaDevelopers();
         System.out.println("Вывод списка всех middle  разработчиков");
         storage.getMiddleDevelopers();
+        System.out.println("Вывод списка проэктов и количества разработчиков на них");
+        storage.getProjectsInfo();
         //storage.addNewProject("newTestProject", "testtest", 500);             //creates new project
         //storage.addNewDeveloper("TestFirstName", "TestSecondary" , 22, "Male" , 600);       //creates new developer
         //storage.addNewCustomer("Customer", true);           //creates new Customer
-        storage.getProjectsInfo();
+        storage.deleteDeveloper( 3);
     }
 
 }
