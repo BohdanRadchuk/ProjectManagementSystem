@@ -1,3 +1,5 @@
+package JDBC;
+
 import java.sql.SQLException;
 import java.util.Scanner;
 
@@ -220,12 +222,9 @@ public class ConsoleInterface {
         }
     }
     private void exitMenu() {        //меню выхода для закрытия соединения
-        try {
-            storage.connection.close();
+            storage.closeConnection();
             System.out.println("Спасибо что пользовались нашей програмой");
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+
     }
 
 }

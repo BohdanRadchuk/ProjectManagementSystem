@@ -1,14 +1,23 @@
+package JDBC;
+
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 
 public class Functionality {
+    private final static String SETTINGS_PATH = "settings.ini";
 
-    private static final String connectionURL = "jdbc:mysql://localhost/homeworkonedb";
-    private static final String user = "root";
-    private static final String pass = "root";
+    private Properties properties;
 
-    public Connection connection;
+    private String dbUrl;
+    private String dbUser;
+    private String dbPass;
+    private String dbDriver;
+
+    private Connection connection;
     private Statement statement;
 
     private PreparedStatement addProjectSt;
@@ -28,13 +37,40 @@ public class Functionality {
     private PreparedStatement deleteCustomerSt;
 
     public Functionality() {
+       readSettings();
+       initConnection();
+       initStatements();
+    }
+
+    private void readSettings() {
+        properties = new Properties();
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            properties.load(new FileInputStream(SETTINGS_PATH));
+            dbDriver = properties.getProperty("db.driver");
+            dbUrl = properties.getProperty("db.path");
+            dbUser = properties.getProperty("db.user");
+            dbPass = properties.getProperty("db.pass");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void initConnection (){
+        try {
+            Class.forName(dbDriver);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
         try {
-            connection = DriverManager.getConnection(connectionURL, user, pass);
+            connection = DriverManager.getConnection(dbUrl, dbUser, dbPass);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    private void initStatements (){
+        try {
             statement = connection.createStatement();
             addProjectSt = connection.prepareStatement("insert into projects (ProjectName, description, cost) values (?, ?, ?);");
             addDeveloperSt = connection.prepareStatement("insert into developers (firstName, secondaryName, age, gender, salary) values (?, ?, ?, ?, ?);");
@@ -282,6 +318,14 @@ public class Functionality {
             updateDeveloperSt.setInt(5, salary);
             updateDeveloperSt.setInt(6, id_dev);
             updateDeveloperSt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void closeConnection (){
+        try {
+            connection.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
