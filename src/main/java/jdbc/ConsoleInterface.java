@@ -1,11 +1,11 @@
-package JDBC;
+package jdbc;
 
-import java.sql.SQLException;
 import java.util.Scanner;
 
 public class ConsoleInterface {
-    Scanner scanner = new Scanner(System.in);
-    Functionality storage = new Functionality();
+    private Scanner scanner = new Scanner(System.in);
+    private static Functionality storage = new Functionality();
+
     public void startMenu() {
         System.out.println("Введите номер операции");
         System.out.println("1 - Создать новые записи");
