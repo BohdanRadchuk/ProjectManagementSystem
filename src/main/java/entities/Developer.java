@@ -1,15 +1,15 @@
 package entities;
 
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Entity
 @Table(name = "developers")
 public class Developer  {
 
+    @Id
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
     @Column (name = "id_dev")
     private int id;
 

@@ -28,6 +28,8 @@ public class HibernateDeveloperDAOImpl implements DeveloperDAO{
 
     @Override
     public List<Developer> getAll() {
+        System.out.printf("asdf");
+        sessionFactory.close();
         return null;
     }
 }
