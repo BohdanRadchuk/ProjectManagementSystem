@@ -3,6 +3,7 @@ package entities;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.Set;
 
 @Entity
 @Table(name = "developers")
@@ -27,6 +28,19 @@ public class Developer  {
 
     @Column (name = "salary")
     private BigDecimal salary;
+
+    @ManyToMany
+    @JoinTable(name = "developer_projects",
+                joinColumns =  @JoinColumn (name = "id_dev"),
+                inverseJoinColumns = @JoinColumn (name = "id_project"))
+    private Set<Projects> projects;
+
+    @ManyToMany
+    @JoinTable(name = "developer_projects",
+            joinColumns =  @JoinColumn (name = "id_dev"),
+            inverseJoinColumns = @JoinColumn (name = "id_skill"))
+    private Set<Skills> skills;
+
 
     public int getId() {
         return id;
@@ -74,5 +88,35 @@ public class Developer  {
 
     public void setSalary(BigDecimal salary) {
         this.salary = salary;
+    }
+
+    public Set<Projects> getProjects() {
+        return projects;
+    }
+
+    public void setProjects(Set<Projects> projects) {
+        this.projects = projects;
+    }
+
+    public Set<Skills> getSkills() {
+        return skills;
+    }
+
+    public void setSkills(Set<Skills> skills) {
+        this.skills = skills;
+    }
+
+    @Override
+    public String toString() {
+        return "Developer{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", secondaryName='" + secondaryName + '\'' +
+                ", age=" + age +
+                ", gender='" + gender + '\'' +
+                ", salary=" + salary +
+                /*", projects=" + projects +
+                ", skills=" + skills +*/
+                '}';
     }
 }

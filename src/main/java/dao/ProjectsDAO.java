@@ -1,4 +1,6 @@
-package dao.hibernate;
+package dao;
 
-public interface ProjectsDAO {
+import entities.Projects;
+
+public interface ProjectsDAO extends GenericDAO <Projects, Integer> {
 }

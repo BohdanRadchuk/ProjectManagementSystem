@@ -1,3 +1,3 @@
-package entities;
+package entities.skillEnums;
 
 public enum SkillLevel {Junior, Middle, Senior}

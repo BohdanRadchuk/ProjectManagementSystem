@@ -1,4 +1,4 @@
-package entities;
+package entities.skillEnums;
 
 public enum Branch {
    Java("Java"), CPLUSPLUS("C++"), CSHARP ("C#"), JAVASCRIPT ("JS");
