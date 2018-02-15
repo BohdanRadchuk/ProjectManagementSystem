@@ -1,10 +1,14 @@
-package jdbc;
-
+import jdbc.Functionality;
 import java.util.Scanner;
 
 public class ConsoleInterface {
     private Scanner scanner = new Scanner(System.in);
-    private static Functionality storage = new Functionality();
+    private Functionality storage = new Functionality();
+    private boolean hibOrJDBC;
+
+    public ConsoleInterface(boolean hibOrJDBC) {
+        this.hibOrJDBC = hibOrJDBC;
+    }
 
     public void startMenu() {
         System.out.println("Введите номер операции");
@@ -63,7 +67,7 @@ public class ConsoleInterface {
             scanner.nextLine();
             String devGend = scanner.nextLine();
             System.out.println("введите зарплату разработчика");
-            int devSalary = scanner.nextInt();
+            long devSalary = scanner.nextLong();
             storage.addNewDeveloper(devName, devSecName, devAge, devGend, devSalary);       //creates new developer
         }
         if (choice == 4) {
@@ -72,11 +76,11 @@ public class ConsoleInterface {
             String custName = scanner.nextLine();
             System.out.println("это государственный или частный заказчик ?");
             System.out.println("1 - государственный");
-            System.out.println("2 - частный");
-            int custStOrPr = scanner.nextInt();
+            System.out.println("0 - частный");
+            byte custStOrPr = scanner.nextByte();
             boolean stOrPr = true;
             if (custStOrPr == 1) stOrPr = true;
-            if (custStOrPr == 2) stOrPr = false;
+            if (custStOrPr == 0) stOrPr = false;
             storage.addNewCustomer(custName, stOrPr);           //creates new Customer
         }
         if (choice == 0) {

@@ -1,35 +1,36 @@
 package dao.hibernate;
 
-import dao.DeveloperDAO;
-import entities.Developer;
+import dao.SkillsDAO;
+import entities.Skills;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
 import java.util.List;
 
-public class HibernateDeveloperDAOImpl implements DeveloperDAO{
+public class HibernateSkillsDAOImpl implements SkillsDAO {
 
     private SessionFactory sessionFactory;
 
-    public HibernateDeveloperDAOImpl(SessionFactory sessionFactory) {
+    public HibernateSkillsDAOImpl(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
-
     @Override
-    public void save(Developer developer) {
+    public void save(Skills skills) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        session.save(developer);
+        session.save(skills);
         transaction.commit();
         session.close();
     }
 
     @Override
-    public Developer getById(Integer id) {
+    public Skills getById(Integer id) {
         Session session = sessionFactory.openSession();
-        Developer developer = session.get(Developer.class, id);
+        Skills skills = session.get(Skills.class, id);
         session.close();
-        return developer;
+        return skills;
     }
 
     @Override
@@ -42,20 +43,19 @@ public class HibernateDeveloperDAOImpl implements DeveloperDAO{
     }
 
     @Override
-    public void update(Developer developer) {
+    public void update(Skills skill) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        session.update(developer);
+        session.update(skill);
         transaction.commit();
         session.close();
     }
 
     @Override
-    public List<Developer> getAll() {
+    public List<Skills> getAll() {
         Session session = sessionFactory.openSession();
-
-        List<Developer> developers = session.createQuery("from Developer").list();
+        List<Skills> skills = session.createQuery("from Skills").list();
         session.close();
-        return developers;
+        return skills;
     }
 }

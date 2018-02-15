@@ -1,35 +1,37 @@
 package dao.hibernate;
 
-import dao.DeveloperDAO;
-import entities.Developer;
+import dao.CompaniesDAO;
+import entities.Companies;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
 import java.util.List;
 
-public class HibernateDeveloperDAOImpl implements DeveloperDAO{
+public class HibernateCompaniesDAOImpl implements CompaniesDAO {
 
     private SessionFactory sessionFactory;
 
-    public HibernateDeveloperDAOImpl(SessionFactory sessionFactory) {
+    public HibernateCompaniesDAOImpl(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
 
     @Override
-    public void save(Developer developer) {
+    public void save(Companies companies) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        session.save(developer);
+        session.save(companies);
         transaction.commit();
         session.close();
     }
 
     @Override
-    public Developer getById(Integer id) {
+    public Companies getById(Integer id) {
         Session session = sessionFactory.openSession();
-        Developer developer = session.get(Developer.class, id);
+        Companies company = session.get(Companies.class, id);
         session.close();
-        return developer;
+        return company;
     }
 
     @Override
@@ -42,20 +44,20 @@ public class HibernateDeveloperDAOImpl implements DeveloperDAO{
     }
 
     @Override
-    public void update(Developer developer) {
+    public void update(Companies company) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        session.update(developer);
+        session.update(company);
         transaction.commit();
         session.close();
     }
 
     @Override
-    public List<Developer> getAll() {
+    public List<Companies> getAll() {
         Session session = sessionFactory.openSession();
 
-        List<Developer> developers = session.createQuery("from Developer").list();
+        List<Companies> companies = session.createQuery("from Companies").list();
         session.close();
-        return developers;
+        return companies;
     }
 }

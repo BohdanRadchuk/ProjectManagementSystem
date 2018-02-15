@@ -20,6 +20,7 @@ public class Functionality {
     private Connection connection;
     private Statement statement;
 
+    //preparedStatements for creating operations
     private PreparedStatement addProjectSt;
     private PreparedStatement addDeveloperSt;
     private PreparedStatement addCustomerSt;
@@ -104,7 +105,7 @@ public class Functionality {
 
     public void getSumOfProjectSalary(int projNumber) {
 
-        String sql = "SELECT developer_projects.id_project as id_proj , sum(developers.salary) AS SumOfSalary FROM developers, developer_projects " +
+        String sql = "SELECT developer_projects.id_project as id_proj, sum(developers.salary) AS SumOfSalary FROM developers, developer_projects " +
                 "WHERE developers.id_dev IN ( SELECT DISTINCT developer_projects.id_dev where developer_projects.id_project = " + projNumber + ");";
 
         ResultSet rs = null;
@@ -218,13 +219,13 @@ public class Functionality {
         }
     }
 
-    public void addNewDeveloper(String firstName, String secondaryName, int age, String gender, int salary) {
+    public void addNewDeveloper(String firstName, String secondaryName, int age, String gender, long salary) {
         try {
             addDeveloperSt.setString(1, firstName);
             addDeveloperSt.setString(2, secondaryName);
             addDeveloperSt.setInt(3, age);
             addDeveloperSt.setString(4, gender);
-            addDeveloperSt.setInt(5, salary);
+            addDeveloperSt.setLong(5, salary);
             addDeveloperSt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();

@@ -1,35 +1,38 @@
 package dao.hibernate;
 
-import dao.DeveloperDAO;
-import entities.Developer;
+import dao.CustomersDAO;
+import entities.Companies;
+import entities.Customers;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
 import java.util.List;
 
-public class HibernateDeveloperDAOImpl implements DeveloperDAO{
+public class HibernateCustomersDAOImpl implements CustomersDAO{
 
     private SessionFactory sessionFactory;
 
-    public HibernateDeveloperDAOImpl(SessionFactory sessionFactory) {
+    public HibernateCustomersDAOImpl(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
 
     @Override
-    public void save(Developer developer) {
+    public void save(Customers customers) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        session.save(developer);
+        session.save(customers);
         transaction.commit();
         session.close();
     }
 
     @Override
-    public Developer getById(Integer id) {
+    public Customers getById(Integer id) {
         Session session = sessionFactory.openSession();
-        Developer developer = session.get(Developer.class, id);
+        Customers customer = session.get(Customers.class, id);
         session.close();
-        return developer;
+        return customer;
     }
 
     @Override
@@ -42,20 +45,20 @@ public class HibernateDeveloperDAOImpl implements DeveloperDAO{
     }
 
     @Override
-    public void update(Developer developer) {
+    public void update(Customers customer) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        session.update(developer);
+        session.update(customer);
         transaction.commit();
         session.close();
     }
 
     @Override
-    public List<Developer> getAll() {
+    public List<Customers> getAll() {
         Session session = sessionFactory.openSession();
 
-        List<Developer> developers = session.createQuery("from Developer").list();
+        List<Customers> customers = session.createQuery("from Customers").list();
         session.close();
-        return developers;
+        return customers;
     }
 }

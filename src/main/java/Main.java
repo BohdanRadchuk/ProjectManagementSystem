@@ -1,7 +1,8 @@
 import dao.hibernate.HibernateDeveloperDAOImpl;
 import entities.Developer;
-import entities.Skills;
 import jdbc.ConsoleInterface;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
 
 import java.math.BigDecimal;
 
@@ -12,7 +13,9 @@ public class Main {
 
         ConsoleInterface ci = new ConsoleInterface();
         //ci.startMenu();
-        HibernateDeveloperDAOImpl hibDevDaoImpl = new HibernateDeveloperDAOImpl();
+
+        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+        HibernateDeveloperDAOImpl hibDevDaoImpl = new HibernateDeveloperDAOImpl(sessionFactory);
         System.out.println(hibDevDaoImpl.getAll());
         Developer developer = new Developer();
         developer.setId(1);
