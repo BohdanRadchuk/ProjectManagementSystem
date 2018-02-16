@@ -103,10 +103,10 @@ public class Functionality {
         }
     }
 
-    public void getSumOfProjectSalary(int projNumber) {
+    public void getSumOfProjectSalary(int projId) {
 
         String sql = "SELECT developer_projects.id_project as id_proj, sum(developers.salary) AS SumOfSalary FROM developers, developer_projects " +
-                "WHERE developers.id_dev IN ( SELECT DISTINCT developer_projects.id_dev where developer_projects.id_project = " + projNumber + ");";
+                "WHERE developers.id_dev IN ( SELECT DISTINCT developer_projects.id_dev where developer_projects.id_project = " + projId + ");";
 
         ResultSet rs = null;
         try {
@@ -287,7 +287,7 @@ public class Functionality {
         }
     }
 
-    public void updateProject(String projectName, String description, int cost, int id_project) {
+    public void updateProject(int id_project, String projectName, String description, int cost) {
         try {
             updateProjectSt.setString(1, projectName);
             updateProjectSt.setString(2, description);
@@ -310,7 +310,7 @@ public class Functionality {
         }
     }
 
-    public void updateDeveloper(String firstName, String secondaryName, int age, String gender, int salary, int id_dev) {
+    public void updateDeveloper( int id_dev, String firstName, String secondaryName, int age, String gender, int salary) {
         try {
             updateDeveloperSt.setString(1, firstName);
             updateDeveloperSt.setString(2, secondaryName);

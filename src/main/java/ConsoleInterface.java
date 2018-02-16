@@ -1,13 +1,19 @@
+import hibernateFunctionality.HibernateFunctionality;
 import jdbc.Functionality;
 import java.util.Scanner;
 
 public class ConsoleInterface {
     private Scanner scanner = new Scanner(System.in);
-    private Functionality storage = new Functionality();
+    private HibernateFunctionality hibFunc;
+    private Functionality storage;
     private boolean hibOrJDBC;
 
     public ConsoleInterface(boolean hibOrJDBC) {
         this.hibOrJDBC = hibOrJDBC;
+        if (hibOrJDBC){
+            hibFunc = new HibernateFunctionality();
+        }
+        else storage = new Functionality();
     }
 
     public void startMenu() {
@@ -43,7 +49,10 @@ public class ConsoleInterface {
             String tableName = scanner.nextLine();
             System.out.println("Введите все поля с определением всех параметров, например: id INT AUTO_INCREMENT PRIMARY KEY, firstName VARCHAR(100) NOT NULL ");
             String sqlColumns = scanner.nextLine();
-            storage.createNewTable(tableName, sqlColumns);
+            if (hibOrJDBC){
+                hibFunc.hibCreateNewTable(tableName, sqlColumns);
+            }
+            else storage.createNewTable(tableName, sqlColumns);
         }
         if (choice == 2) {
             System.out.println("введите имя проэкта");
@@ -53,7 +62,10 @@ public class ConsoleInterface {
             String prDesc = scanner.nextLine();
             System.out.println("введите стоимость проэкта");
             int prCost = scanner.nextInt();
-            storage.addNewProject(prName, prDesc, prCost);             //creates new project
+            if (hibOrJDBC){
+                hibFunc.hibCreateNewProject(prName, prDesc, prCost);
+            }
+            else storage.addNewProject(prName, prDesc, prCost);             //creates new project
         }
         if (choice == 3) {
             System.out.println("введите имя разработчика");
@@ -68,7 +80,10 @@ public class ConsoleInterface {
             String devGend = scanner.nextLine();
             System.out.println("введите зарплату разработчика");
             long devSalary = scanner.nextLong();
-            storage.addNewDeveloper(devName, devSecName, devAge, devGend, devSalary);       //creates new developer
+            if (hibOrJDBC){
+                hibFunc.hibCreateNewDeveloper(devName, devSecName, devAge, devGend, devSalary);
+            }
+            else storage.addNewDeveloper(devName, devSecName, devAge, devGend, devSalary);       //creates new developer
         }
         if (choice == 4) {
             System.out.println("введите имя заказчика");
@@ -78,15 +93,21 @@ public class ConsoleInterface {
             System.out.println("1 - государственный");
             System.out.println("0 - частный");
             byte custStOrPr = scanner.nextByte();
-            boolean stOrPr = true;
-            if (custStOrPr == 1) stOrPr = true;
-            if (custStOrPr == 0) stOrPr = false;
-            storage.addNewCustomer(custName, stOrPr);           //creates new Customer
+
+            if (hibOrJDBC){
+                hibFunc.hibCreateNewCustomer(custName,custStOrPr);
+            }
+            else {
+                boolean stOrPr = true;
+                if (custStOrPr == 1) stOrPr = true;
+                if (custStOrPr == 0) stOrPr = false;
+                storage.addNewCustomer(custName, stOrPr);           //creates new Customer
+            }
         }
         if (choice == 0) {
             startMenu();
         }
-        if (choice != 0) otherOperation();
+        else otherOperation();
     }
 
     private void readMenu() {
@@ -119,8 +140,7 @@ public class ConsoleInterface {
         if (choice == 0) {
             startMenu();
         }
-        if (choice != 0)
-            otherOperation();
+        else otherOperation();
     }
 
     private void updateMenu() {
@@ -140,7 +160,7 @@ public class ConsoleInterface {
             String prDescr = scanner.nextLine();
             System.out.println("введите новую стоимость проэкта");
             int prCost = scanner.nextInt();
-            storage.updateProject(prName, prDescr, prCost, prId);
+            storage.updateProject(prId, prName, prDescr, prCost);
         }
         if (choice == 2) {
             System.out.println("введите Id разработчика");
@@ -157,7 +177,7 @@ public class ConsoleInterface {
             String devGend = scanner.nextLine();
             System.out.println("введите новый зарплату разработчика");
             int devSalary = scanner.nextInt();
-            storage.updateDeveloper(devName, devSecName, devAge, devGend, devSalary, devId);
+            storage.updateDeveloper(devId, devName, devSecName, devAge, devGend, devSalary);
         }
         if (choice == 3) {
             System.out.println("введите Id заказчика");
@@ -168,7 +188,7 @@ public class ConsoleInterface {
             System.out.println("это государственный или частный заказчик ?");
             System.out.println("1 - государственный");
             System.out.println("2 - частный");
-            int custStOrPr = scanner.nextInt();
+            byte custStOrPr = scanner.nextByte();
             boolean stOrPr = true;
             if (custStOrPr == 1) stOrPr = true;
             if (custStOrPr == 2) stOrPr = false;
@@ -177,7 +197,7 @@ public class ConsoleInterface {
         if (choice == 0) {
             startMenu();
         }
-        if (choice != 0) otherOperation();
+        else otherOperation();
     }
 
     private void deleteMenu() {
@@ -205,7 +225,7 @@ public class ConsoleInterface {
         if (choice == 0) {
             startMenu();
         }
-        if (choice != 0) otherOperation();
+        else otherOperation();
     }
 
     private void otherOperation() {      //меню возврата в главное меню или выхода (используется после операций)
@@ -228,7 +248,5 @@ public class ConsoleInterface {
     private void exitMenu() {        //меню выхода для закрытия соединения
             storage.closeConnection();
             System.out.println("Спасибо что пользовались нашей програмой");
-
     }
-
 }
