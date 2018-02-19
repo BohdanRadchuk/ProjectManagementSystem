@@ -10,13 +10,16 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
-
+import org.hibernate.query.NativeQuery;
 import java.math.BigDecimal;
+import java.math.BigInteger;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class HibernateFunctionality {
 
-    private SessionFactory sessionFactory;
+    private SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
     private HibernateProjectsDAOImpl hbProjImpl = new HibernateProjectsDAOImpl(sessionFactory);
     private HibernateDeveloperDAOImpl hbDevImpl = new HibernateDeveloperDAOImpl(sessionFactory);
     private HibernateCustomersDAOImpl hbCustImpl = new HibernateCustomersDAOImpl(sessionFactory);
@@ -24,11 +27,8 @@ public class HibernateFunctionality {
     private Projects project;
     private Customers customer;
 
-    public HibernateFunctionality() {
-        this.sessionFactory = new Configuration().configure().buildSessionFactory();
-    }
 
-    //создание новой таблицы
+    //создание новой таблицы - !не работает
     public void hibCreateNewTable(String name, String params) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
@@ -38,6 +38,7 @@ public class HibernateFunctionality {
     }
 
     //создание записей
+    //проэкта
     public void hibCreateNewProject(String projectName, String description, int cost) {
         project = new Projects();
         project.setProjectName(projectName);
@@ -46,6 +47,7 @@ public class HibernateFunctionality {
         hbProjImpl.save(project);
     }
 
+    //разработчика
     public void hibCreateNewDeveloper(String firstName, String secondaryName, int age, String gender, long salary) {
         developer = new Developer();
         developer.setFirstName(firstName);
@@ -56,6 +58,7 @@ public class HibernateFunctionality {
         hbDevImpl.save(developer);
     }
 
+    //пользователя
     public void hibCreateNewCustomer(String custName, byte custStOrPr) {
         customer = new Customers();
         customer.setCustomerName(custName);
@@ -63,50 +66,91 @@ public class HibernateFunctionality {
         hbCustImpl.save(customer);
     }
 
-    public void hibGetSumOfProjectSalary(int id) {
+    //считывание даных
+    //Вывод зарплаты всех разработчиков отдельного проекта
+    public void hbGetSumOfProjectSalary(int projId) {
+        String sql = "SELECT sum(developers.salary) AS SumOfSalary FROM developers, developer_projects " +
+                "WHERE developers.id_dev IN ( SELECT DISTINCT developer_projects.id_dev where developer_projects.id_project = " + projId + ");";
+
         Session session = sessionFactory.openSession();
 
-
+        NativeQuery query = session.createNativeQuery(sql);
+        BigDecimal result = (BigDecimal) query.uniqueResult();
+        System.out.println("Сума зарплаты всех разработчиков " + projId + " проэкта = " + result);
         session.close();
     }
 
-    /*System.out.println("Выберите данные которые хотите считать");
-        System.out.println("1 - Вывод зарплаты всех разработчиков отдельного проекта:");
-        System.out.println("2 - Вывод списка разработчиков отдельного проекта:");
-        System.out.println("3 - Вывод списка всех Java разработчиков");
-        System.out.println("4 - Вывод списка всех middle  разработчиков");
-        System.out.println("5 - Вывод списка проэктов и количества разработчиков на них");
-*/
-    public void hbGetDevelopersOfProject(int id_project){
-        Session session = sessionFactory.openSession();
-        List<Developer> developers = session.createQuery("from Developer d where d.projects_id = " + id_project + ";").list();
-        session.close();
-        for (Developer d : developers) {
-            System.out.println(d);
-        }
-    }
-    public void hbGetJavaDevelopers(){
-        Session session = sessionFactory.openSession();
-        List<Developer> developers = session.createQuery("from Developer d where d.skills.Branch equals 'Java';").list();
-        session.close();
-        for (Developer d : developers) {
-            System.out.println(d);
-        }
+    //Вывод списка разработчиков отдельного проекта
+    public void hbGetDevelopersOfProject(int id_project) {
+        String sql = "SELECT DISTINCT developers.firstName, developers.secondaryName " +
+                "FROM developers, developer_projects " +
+                "WHERE  developers.id_dev IN (" +
+                "SELECT developer_projects.id_dev " +
+                "WHERE (developer_projects.id_project = " + id_project + "));";
+        hbGetDeveloperListQuery(sql);
     }
 
+    //Вывод списка всех Java разработчиков
+    public void hbGetJavaDevelopers() {
+        String sql = "select DISTINCT developers.firstName, developers.secondaryName " +
+                "from developers, developer_skill " +
+                "where  developers.id_dev IN (" +
+                "select  developer_skill.id_dev " +
+                "where (developer_skill.id_skill in (select id_skill from skills where branch like 'Java' )));";
+        hbGetDeveloperListQuery(sql);
+    }
 
-    public void hbGetMiddleDevelopers(){
+    //Вывод списка всех middle  разработчиков
+    public void hbGetMiddleDevelopers() {
+        String sql = "select DISTINCT developers.firstName, developers.secondaryName " +
+                "from developers, developer_skill " +
+                "where  developers.id_dev IN (" +
+                "select  developer_skill.id_dev " +
+                "where (developer_skill.id_skill in (select id_skill from skills where skill_level like 'Middle')));";
+        hbGetDeveloperListQuery(sql);
+    }
+
+    //метод для вывода списка имен и фамилий разработчиков в зависимости от выборки
+    private void hbGetDeveloperListQuery(String sqlRequest) {
         Session session = sessionFactory.openSession();
-        List<Developer> developers = session.createQuery("from Developer d where d.skills.Level equals 'Middle';").list();
-        session.close();
-        for (Developer d : developers) {
-            System.out.println(d);
+
+        NativeQuery query = session.createNativeQuery(sqlRequest);
+        List<Object[]> rows = (List<Object[]>) query.list();
+
+        for (Object[] row : rows) {
+            String fsname = (String) row[0];
+            String lastName = (String) row[1];
+
+            System.out.println(fsname + ", " + lastName);
         }
+        session.close();
+    }
+
+    //Вывод списка проэктов и количества разработчиков на них
+    public void hbGetProjectsInfo() {
+        List<String> result = new ArrayList<>();
+        String sql = "select cost, ProjectName, count(developer_projects.id_dev) as DevelopersCount " +
+                "from projects, developer_projects " +
+                "where projects.id_project = developer_projects.id_project " +
+                "group by projects.id_project;";
+        Session session = sessionFactory.openSession();
+
+        NativeQuery query = session.createNativeQuery(sql);
+        List<Object[]> rows = (List<Object[]>) query.list();
+
+        for (Object[] row : rows) {
+            Integer cost = (Integer) row[0];
+            String projName = (String) row[1];
+            BigInteger amountOfDevelopers = (BigInteger) row[2];
+
+            System.out.println(cost + ", " + projName + ", " + amountOfDevelopers);
+        }
+        session.close();
     }
 
     //обновление записей
     public void hibUpdateProject(int prId, String prName, String prDescr, int prCost) {
-        project = new Projects();
+        project = hbProjImpl.getById(prId);
         project.setId_project(prId);
         project.setProjectName(prName);
         project.setDescription(prDescr);
@@ -114,8 +158,8 @@ public class HibernateFunctionality {
         hbProjImpl.update(project);
     }
 
-    public void hibUpdateDeveloper (int devId, String devName, String devSecName, int devAge, String devGend, int devSalary){
-        developer = new Developer();
+    public void hibUpdateDeveloper(int devId, String devName, String devSecName, int devAge, String devGend, int devSalary) {
+        developer = hbDevImpl.getById(devId);
         developer.setId(devId);
         developer.setFirstName(devName);
         developer.setSecondaryName(devSecName);
@@ -125,8 +169,8 @@ public class HibernateFunctionality {
         hbDevImpl.update(developer);
     }
 
-    public void hibUpdateCustomer (int custId, String custName, byte stOrPr){
-        customer = new Customers();
+    public void hibUpdateCustomer(int custId, String custName, byte stOrPr) {
+        customer = hbCustImpl.getById(custId);
         customer.setId_customer(custId);
         customer.setCustomerName(custName);
         customer.setStateOrPrivate(stOrPr);
@@ -134,16 +178,19 @@ public class HibernateFunctionality {
     }
 
     //удаление записей
-    public void hibDeleteProject (int id){
+    public void hibDeleteProject(int id) {
         hbProjImpl.remove(id);
     }
 
-    public void hibDeleteDeveloper (int id){
+    public void hibDeleteDeveloper(int id) {
         hbDevImpl.remove(id);
     }
-    public void hibDeleteCustomer (int id){
+
+    public void hibDeleteCustomer(int id) {
         hbCustImpl.remove(id);
     }
 
-
+    public void hibCloseSessionFactory() {
+        this.sessionFactory.close();
+    }
 }
