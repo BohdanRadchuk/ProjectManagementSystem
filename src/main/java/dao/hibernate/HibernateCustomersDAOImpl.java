@@ -3,6 +3,7 @@ package dao.hibernate;
 import dao.CustomersDAO;
 import entities.Companies;
 import entities.Customers;
+import hibernateFunctionality.HibernateFactory;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -12,15 +13,10 @@ import java.util.List;
 
 public class HibernateCustomersDAOImpl implements CustomersDAO{
 
-    private SessionFactory sessionFactory;
-
-    public HibernateCustomersDAOImpl(SessionFactory sessionFactory) {
-        this.sessionFactory = sessionFactory;
-    }
 
     @Override
     public void save(Customers customers) {
-        Session session = sessionFactory.openSession();
+        Session session = HibernateFactory.getSessionFactory().openSession();
         Transaction transaction = session.beginTransaction();
         session.save(customers);
         transaction.commit();
@@ -29,7 +25,7 @@ public class HibernateCustomersDAOImpl implements CustomersDAO{
 
     @Override
     public Customers getById(Integer id) {
-        Session session = sessionFactory.openSession();
+        Session session = HibernateFactory.getSessionFactory().openSession();
         Customers customer = session.get(Customers.class, id);
         session.close();
         return customer;
@@ -37,7 +33,7 @@ public class HibernateCustomersDAOImpl implements CustomersDAO{
 
     @Override
     public void remove(Integer id) {
-        Session session = sessionFactory.openSession();
+        Session session = HibernateFactory.getSessionFactory().openSession();
         Transaction transaction = session.beginTransaction();
         session.delete(getById(id));
         transaction.commit();
@@ -46,7 +42,7 @@ public class HibernateCustomersDAOImpl implements CustomersDAO{
 
     @Override
     public void update(Customers customer) {
-        Session session = sessionFactory.openSession();
+        Session session = HibernateFactory.getSessionFactory().openSession();
         Transaction transaction = session.beginTransaction();
         session.update(customer);
         transaction.commit();
@@ -55,7 +51,7 @@ public class HibernateCustomersDAOImpl implements CustomersDAO{
 
     @Override
     public List<Customers> getAll() {
-        Session session = sessionFactory.openSession();
+        Session session = HibernateFactory.getSessionFactory().openSession();
 
         List<Customers> customers = session.createQuery("from Customers").list();
         session.close();

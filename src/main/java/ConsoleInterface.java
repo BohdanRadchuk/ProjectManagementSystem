@@ -1,3 +1,4 @@
+import hibernateFunctionality.HibernateFactory;
 import hibernateFunctionality.HibernateFunctionality;
 import jdbc.Functionality;
 
@@ -273,7 +274,7 @@ public class ConsoleInterface {
 
     private void exitMenu() {        //меню выхода для закрытия соединения
         if (hibOrJDBC) {
-            hibFunc.hibCloseSessionFactory();
+            HibernateFactory.shutdown();
         } else storage.closeConnection();
         System.out.println("Спасибо что пользовались нашей програмой");
     }

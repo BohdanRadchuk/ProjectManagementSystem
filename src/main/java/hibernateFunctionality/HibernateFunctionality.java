@@ -19,18 +19,29 @@ import java.util.List;
 
 public class HibernateFunctionality {
 
-    private SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
-    private HibernateProjectsDAOImpl hbProjImpl = new HibernateProjectsDAOImpl(sessionFactory);
-    private HibernateDeveloperDAOImpl hbDevImpl = new HibernateDeveloperDAOImpl(sessionFactory);
-    private HibernateCustomersDAOImpl hbCustImpl = new HibernateCustomersDAOImpl(sessionFactory);
+   // private static final SessionFactory SESSION_FACTORY = buildSessionFactory();
+    private HibernateProjectsDAOImpl hbProjImpl = new HibernateProjectsDAOImpl();
+    private HibernateDeveloperDAOImpl hbDevImpl = new HibernateDeveloperDAOImpl();
+    private HibernateCustomersDAOImpl hbCustImpl = new HibernateCustomersDAOImpl();
     private Developer developer;
     private Projects project;
     private Customers customer;
 
+/*    private static SessionFactory buildSessionFactory() {
+        try {
+            return new Configuration().configure().buildSessionFactory();
+        } catch (Throwable e) {
+            throw new ExceptionInInitializerError(e);
+        }
+    }
+
+    public static SessionFactory getSessionFactory() {
+        return SESSION_FACTORY;
+    }*/
 
     //создание новой таблицы - !не работает
     public void hibCreateNewTable(String name, String params) {
-        Session session = sessionFactory.openSession();
+        Session session = HibernateFactory.getSessionFactory().openSession();
         Transaction transaction = session.beginTransaction();
         session.createNativeQuery("CREATE TABLE IF NOT EXISTS " + name + " (" + params + ");");
         transaction.commit();
@@ -72,7 +83,7 @@ public class HibernateFunctionality {
         String sql = "SELECT sum(developers.salary) AS SumOfSalary FROM developers, developer_projects " +
                 "WHERE developers.id_dev IN ( SELECT DISTINCT developer_projects.id_dev where developer_projects.id_project = " + projId + ");";
 
-        Session session = sessionFactory.openSession();
+        Session session = HibernateFactory.getSessionFactory().openSession();
 
         NativeQuery query = session.createNativeQuery(sql);
         BigDecimal result = (BigDecimal) query.uniqueResult();
@@ -112,7 +123,7 @@ public class HibernateFunctionality {
 
     //метод для вывода списка имен и фамилий разработчиков в зависимости от выборки
     private void hbGetDeveloperListQuery(String sqlRequest) {
-        Session session = sessionFactory.openSession();
+        Session session = HibernateFactory.getSessionFactory().openSession();
 
         NativeQuery query = session.createNativeQuery(sqlRequest);
         List<Object[]> rows = (List<Object[]>) query.list();
@@ -133,7 +144,7 @@ public class HibernateFunctionality {
                 "from projects, developer_projects " +
                 "where projects.id_project = developer_projects.id_project " +
                 "group by projects.id_project;";
-        Session session = sessionFactory.openSession();
+        Session session = HibernateFactory.getSessionFactory().openSession();
 
         NativeQuery query = session.createNativeQuery(sql);
         List<Object[]> rows = (List<Object[]>) query.list();
@@ -190,7 +201,4 @@ public class HibernateFunctionality {
         hbCustImpl.remove(id);
     }
 
-    public void hibCloseSessionFactory() {
-        this.sessionFactory.close();
-    }
 }
