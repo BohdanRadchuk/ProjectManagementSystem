@@ -9,14 +9,14 @@
 <html>
 <head>
     <link href="../../css/styles.css" rel="stylesheet" type="text/css">
-    <title>CreateMenu</title>
+    <title>CreateProject</title>
 </head>
 <body bgcolor="#acffb5">
 
 <h2>Add new Project</h2>
 <form action="/createProject" method="POST">
     <h3>Project name</h3>
-    <input type="hidden" name="developerId">
+    <input type="hidden" name="projectId">
     <input type="text" name="projectName" placeholder="Project name"/>
     <div class="col-sm-5">
         <h3>Project description</h3>

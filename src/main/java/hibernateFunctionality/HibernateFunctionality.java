@@ -112,29 +112,32 @@ public class HibernateFunctionality {
     }
 
     //Вывод списка всех middle  разработчиков
-    public void hbGetMiddleDevelopers() {
+    public List<String[]> hbGetMiddleDevelopers() {
         String sql = "select DISTINCT developers.firstName, developers.secondaryName " +
                 "from developers, developer_skill " +
                 "where  developers.id_dev IN (" +
                 "select  developer_skill.id_dev " +
                 "where (developer_skill.id_skill in (select id_skill from skills where skill_level like 'Middle')));";
-        hbGetDeveloperListQuery(sql);
+        //hbGetDeveloperListQuery(sql);
+        return hbGetDeveloperListQuery(sql);
     }
 
     //метод для вывода списка имен и фамилий разработчиков в зависимости от выборки
-    private void hbGetDeveloperListQuery(String sqlRequest) {
+    private List<String[]> hbGetDeveloperListQuery(String sqlRequest) {
         Session session = HibernateFactory.getSessionFactory().openSession();
 
         NativeQuery query = session.createNativeQuery(sqlRequest);
         List<Object[]> rows = (List<Object[]>) query.list();
-
+        List<String[]> strings = new ArrayList<>();
+        String [] stringArray = new String [2];
         for (Object[] row : rows) {
-            String fsname = (String) row[0];
-            String lastName = (String) row[1];
-
-            System.out.println(fsname + ", " + lastName);
+            stringArray[0] = (String) row[0];
+            stringArray[1] = (String) row[1];
+            strings.add(stringArray);
+            System.out.println(stringArray[0] + ", " + stringArray[1]);
         }
         session.close();
+        return strings;
     }
 
     //Вывод списка проэктов и количества разработчиков на них
