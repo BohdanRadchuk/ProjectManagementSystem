@@ -7,31 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb388385-724e-487f-8223-6bfff1ca1506" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateDeveloper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllProjects.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetJavaDevelopers.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetMiddleDevelopers.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetOneProjectDevelopers.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/view/create/createDeveloper.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/view/read/readJavaDevs.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/view/read/readMiddleDevelopers.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/view/read/readOneProjectDevelopers.jsp" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_6_0_6.xml" afterPath="" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateCustomer.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/view/create/createCustomer.jsp" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/ProjectManagementSystem.iml" afterPath="$PROJECT_DIR$/ProjectManagementSystem.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anotationServlets/CreateProject.java" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateProject.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hibernateFunctionality/HibernateFunctionality.java" afterPath="$PROJECT_DIR$/src/main/java/hibernateFunctionality/HibernateFunctionality.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/styles.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/styles.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/home.jsp" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/create/createMenu.html" afterPath="$PROJECT_DIR$/src/main/webapp/view/create/createMenu.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/create/createDeveloper.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/view/create/createDeveloper.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/view/create/createProject.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/view/create/createProject.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ConsoleInterface.class" afterPath="$PROJECT_DIR$/target/classes/ConsoleInterface.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernateFunctionality/HibernateFunctionality.class" afterPath="$PROJECT_DIR$/target/classes/hibernateFunctionality/HibernateFunctionality.class" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,9 +33,11 @@
     <option name="GROUP_SCHEMA" value="true" />
     <option name="GROUP_CONTENTS" value="false" />
     <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -60,14 +45,12 @@
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="homeworkonedb@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="homeworkonedb@localhost [2]" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="homeworkonedb@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="homeworkonedb@localhost [2]" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="homeworkonedb: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
     </expand>
     <select />
@@ -77,38 +60,18 @@
       <file leaf-file-name="ProjectManagementSystem.iml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProjectManagementSystem.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="105" column="45" lean-forward="false" selection-start-line="105" selection-start-column="45" selection-end-line="105" selection-end-column="45" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createProject.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="createProject.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/view/create/createProject.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreateProject.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateProject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="33" column="5" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="33" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RequestDispatcher.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/RequestDispatcher.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="16" />
+            <state relative-caret-position="407">
+              <caret line="35" column="6" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -117,8 +80,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="13" column="68" lean-forward="false" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="68" />
+            <state relative-caret-position="160">
+              <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -127,8 +90,30 @@
       <file leaf-file-name="createMenu.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/view/create/createMenu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="160">
+              <caret line="17" column="51" lean-forward="false" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateCustomer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateCustomer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createCustomer.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/create/createCustomer.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -137,8 +122,8 @@
       <file leaf-file-name="CreateDeveloper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateDeveloper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="33" column="58" lean-forward="false" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
+            <state relative-caret-position="228">
+              <caret line="33" column="61" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="33" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -146,11 +131,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createDeveloper.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HibernateFunctionality.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hibernateFunctionality/HibernateFunctionality.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="61" column="11" lean-forward="false" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
+              <folding>
+                <marker date="1521790622676" expanded="true" signature="1645:1701" ph="CREATE TABLE... IF" />
+                <marker date="1521790622676" expanded="true" signature="2943:3169" ph="SELECT sum(d... developers" />
+                <marker date="1521790622676" expanded="true" signature="5971:6232" ph="select cost,... projects" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createDeveloper.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/view/create/createDeveloper.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-299">
-              <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            <state relative-caret-position="109">
+              <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -159,106 +158,9 @@
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="78" column="1" lean-forward="false" selection-start-line="78" selection-start-column="1" selection-end-line="78" selection-end-column="1" />
+            <state relative-caret-position="279">
+              <caret line="100" column="1" lean-forward="true" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Configuration.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.2.12.Final/hibernate-core-5.2.12.Final.jar!/org/hibernate/cfg/Configuration.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="168" column="39" lean-forward="false" selection-start-line="168" selection-start-column="39" selection-end-line="168" selection-end-column="39" />
-              <folding>
-                <marker date="1518010089923" expanded="false" signature="0:104" ph="/.../" />
-                <marker date="1518010089923" expanded="false" signature="141:2633" ph="..." />
-                <marker date="1518010089923" expanded="true" signature="4232:4243" ph=" { " />
-                <marker date="1518010089923" expanded="true" signature="4297:4303" ph=" }" />
-                <marker date="1518010089923" expanded="true" signature="4372:4631" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="4691:4972" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="5072:5691" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="5720:6499" ph="{...}" />
-                <marker date="1518010089923" expanded="false" signature="6538:6549" ph=" { " />
-                <marker date="1518010089923" expanded="false" signature="6572:6578" ph=" }" />
-                <marker date="1518010089923" expanded="true" signature="6642:6708" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="6761:6877" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="6951:7037" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="7101:7173" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="7264:7333" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="7424:7493" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="7558:7617" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="7697:7873" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="7953:8012" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="8084:8255" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="8335:8513" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="8519:8537" ph="/**...*/" />
-                <marker date="1518010089923" expanded="true" signature="8634:8662" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="8746:8838" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="8902:8965" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="9043:9128" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="9215:9309" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="9384:9459" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="9532:9607" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="9613:9631" ph="/**...*/" />
-                <marker date="1518010089923" expanded="true" signature="9693:9700" ph="{}" />
-                <marker date="1518010089923" expanded="true" signature="9782:9866" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="9985:10077" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="10161:10245" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="10251:10269" ph="/**...*/" />
-                <marker date="1518010089923" expanded="true" signature="10354:10382" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="10449:10519" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="10525:10543" ph="/**...*/" />
-                <marker date="1518010089923" expanded="true" signature="10635:10710" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="10804:10893" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="10899:10917" ph="/**...*/" />
-                <marker date="1518010089923" expanded="true" signature="11041:11095" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="11179:11263" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="11346:11430" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="11497:11589" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="11671:11753" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="11821:11891" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="11965:12041" ph="{...}" />
-                <marker date="1518010089923" expanded="false" signature="12082:12093" ph=" { " />
-                <marker date="1518010089923" expanded="false" signature="12117:12123" ph=" }" />
-                <marker date="1518010089923" expanded="true" signature="12190:12258" ph="{...}" />
-                <marker date="1518010089923" expanded="false" signature="12319:12330" ph=" { " />
-                <marker date="1518010089923" expanded="false" signature="12364:12370" ph=" }" />
-                <marker date="1518010089923" expanded="false" signature="12433:12444" ph=" { " />
-                <marker date="1518010089923" expanded="false" signature="12479:12485" ph=" }" />
-                <marker date="1518010089923" expanded="true" signature="12576:12645" ph="{...}" />
-                <marker date="1518010089923" expanded="false" signature="12708:12719" ph=" { " />
-                <marker date="1518010089923" expanded="false" signature="12754:12760" ph=" }" />
-                <marker date="1518010089923" expanded="true" signature="12851:12920" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="13002:13062" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="13180:13267" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="13374:16834" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="16910:17172" ph="{...}" />
-                <marker date="1518010089923" expanded="false" signature="17227:17238" ph=" { " />
-                <marker date="1518010089923" expanded="false" signature="17263:17269" ph=" }" />
-                <marker date="1518010089923" expanded="true" signature="17345:17506" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="17583:17775" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="17895:18009" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="18110:18213" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="18292:18390" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="18488:18597" ph="{...}" />
-                <marker date="1518010089923" expanded="true" signature="18678:18946" ph="{...}" />
-                <marker date="1518010089923" expanded="false" signature="19015:19026" ph=" { " />
-                <marker date="1518010089923" expanded="false" signature="19065:19071" ph=" }" />
-                <marker date="1518010089923" expanded="false" signature="19108:19119" ph=" { " />
-                <marker date="1518010089923" expanded="false" signature="19147:19153" ph=" }" />
-                <marker date="1518010089923" expanded="false" signature="19195:19206" ph=" { " />
-                <marker date="1518010089923" expanded="false" signature="19239:19245" ph=" }" />
-                <marker date="1518010089923" expanded="true" signature="19320:19452" ph="{...}" />
-                <marker date="1518010089923" expanded="false" signature="19516:19527" ph=" { " />
-                <marker date="1518010089923" expanded="false" signature="19552:19558" ph=" }" />
-                <marker date="1518010089923" expanded="false" signature="19639:19650" ph=" { " />
-                <marker date="1518010089923" expanded="false" signature="19684:19690" ph=" }" />
-                <marker date="1518010089923" expanded="true" signature="19696:19714" ph="/**...*/" />
-                <marker date="1518010089923" expanded="true" signature="19763:19770" ph="{}" />
-                <marker date="1518010089923" expanded="true" signature="19836:20185" ph="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -288,9 +190,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/entities/skillEnums/Branch.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/Customers.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/Companies.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/GenericDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/DeveloperDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/hibernate/ProjectsDAO.java" />
@@ -324,7 +223,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/read/readOneProjectDevelopers.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetOneProjectDevelopers.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hibernateFunctionality/HibernateFunctionality.java" />
         <option value="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetMiddleDevelopers.java" />
         <option value="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllProjects.java" />
         <option value="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetJavaDevelopers.java" />
@@ -333,11 +231,15 @@
         <option value="$PROJECT_DIR$/settings.ini" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/styles.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/create/createProject.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateProject.java" />
         <option value="$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateDeveloper.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/create/createMenu.html" />
+        <option value="$PROJECT_DIR$/src/main/java/hibernateFunctionality/HibernateFunctionality.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/create/createCust.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateCustomer.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/create/createProject.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/styles.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/create/createCustomer.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/create/createDeveloper.jsp" />
       </list>
     </option>
@@ -401,45 +303,46 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="ProjectManagementSystem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectManagementSystem1" type="462c0819:PsiDirectoryNode" />
+              <item name="ProjectManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectManagementSystem" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ProjectManagementSystem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectManagementSystem1" type="462c0819:PsiDirectoryNode" />
+              <item name="ProjectManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ProjectManagementSystem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectManagementSystem1" type="462c0819:PsiDirectoryNode" />
+              <item name="ProjectManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ProjectManagementSystem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectManagementSystem1" type="462c0819:PsiDirectoryNode" />
+              <item name="ProjectManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ProjectManagementSystem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectManagementSystem1" type="462c0819:PsiDirectoryNode" />
+              <item name="ProjectManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="anotationServlets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ProjectManagementSystem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectManagementSystem1" type="462c0819:PsiDirectoryNode" />
+              <item name="ProjectManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -447,31 +350,38 @@
               <item name="create" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ProjectManagementSystem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectManagementSystem1" type="462c0819:PsiDirectoryNode" />
+              <item name="ProjectManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectManagementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ProjectManagementSystem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectManagementSystem1" type="462c0819:PsiDirectoryNode" />
+              <item name="ProjectManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ProjectManagementSystem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectManagementSystem1" type="462c0819:PsiDirectoryNode" />
+              <item name="ProjectManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ProjectManagementSystem1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectManagementSystem1" type="462c0819:PsiDirectoryNode" />
+              <item name="ProjectManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
@@ -482,7 +392,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -528,7 +437,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Smart Tomcat.tomcat">
+  <component name="RunManager" selected="Smart Tomcat.Unnamed">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -624,14 +533,14 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <configuration name="tomcat" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
-      <option name="DOC_BASE" value="D:\CV\java\ProjectManagementSystem1\src\main\webapp" />
+    <configuration name="Unnamed" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
+      <option name="DOC_BASE" value="D:\java\project\moduleDZ\ProjectManagementSystem\src\main\webapp" />
       <option name="CONTEXT_PATH" value="/" />
       <option name="TOMCAT_PORT" value="8080" />
       <option name="VM_OPTIONS" value="" />
     </configuration>
     <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Smart Tomcat.tomcat" />
+      <item index="0" class="java.lang.String" itemvalue="Smart Tomcat.Unnamed" />
       <item index="1" class="java.lang.String" itemvalue="Application.Main" />
     </list>
     <recent_temporary>
@@ -661,11 +570,13 @@
       <workItem from="1521703861144" duration="12642000" />
       <workItem from="1521721903263" duration="4856000" />
       <workItem from="1521727181015" duration="4531000" />
+      <workItem from="1521790697670" duration="456000" />
+      <workItem from="1521791553701" duration="2746000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50810000" />
+    <option name="totallyTimeSpent" value="54012000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -694,7 +605,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24659607" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25416037" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -730,34 +641,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.2.12.Final/hibernate-core-5.2.12.Final.jar!/org/hibernate/query/QueryProducer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.2.12.Final/hibernate-core-5.2.12.Final.jar!/org/hibernate/SessionFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/1135259d/4d3a2ea8-9ae3-4292-9da7-c32844b910fa/homeworkonedb.skills">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4d3a2ea8-9ae3-4292-9da7-c32844b910fa/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4d3a2ea8-9ae3-4292-9da7-c32844b910fa/console.sql" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/11.tld" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/jdbc/Functionality.java">
@@ -768,13 +652,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/view/developer/list-developers.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/entities/Developer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1190">
@@ -910,37 +787,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hibernateFunctionality/HibernateFunctionality.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding>
-            <marker date="1521712487380" expanded="true" signature="1645:1701" ph="CREATE TABLE... IF" />
-            <marker date="1521712487380" expanded="true" signature="2943:3169" ph="SELECT sum(d... developers" />
-            <marker date="1521712487380" expanded="true" signature="5971:6232" ph="select cost,... projects" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hibernateFunctionality/HibernateFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hibernateFunctionality/HibernateFactory.java" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -948,7 +802,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -968,186 +821,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/1135259d/4d3a2ea8-9ae3-4292-9da7-c32844b910fa/homeworkonedb.projects">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/create-structure.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="9" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://table:/1135259d/4d3a2ea8-9ae3-4292-9da7-c32844b910fa/homeworkonedb.projects" />
+    <entry file="file://$PROJECT_DIR$/create-structure.sh" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.2.12.Final/hibernate-core-5.2.12.Final.jar!/org/hibernate/cfg/Configuration.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
+        <state relative-caret-position="1819">
           <caret line="168" column="39" lean-forward="false" selection-start-line="168" selection-start-column="39" selection-end-line="168" selection-end-column="39" />
-          <folding>
-            <marker date="1518010089923" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1518010089923" expanded="false" signature="141:2633" ph="..." />
-            <marker date="1518010089923" expanded="true" signature="4232:4243" ph=" { " />
-            <marker date="1518010089923" expanded="true" signature="4297:4303" ph=" }" />
-            <marker date="1518010089923" expanded="true" signature="4372:4631" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="4691:4972" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="5072:5691" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="5720:6499" ph="{...}" />
-            <marker date="1518010089923" expanded="false" signature="6538:6549" ph=" { " />
-            <marker date="1518010089923" expanded="false" signature="6572:6578" ph=" }" />
-            <marker date="1518010089923" expanded="true" signature="6642:6708" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="6761:6877" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="6951:7037" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="7101:7173" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="7264:7333" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="7424:7493" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="7558:7617" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="7697:7873" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="7953:8012" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="8084:8255" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="8335:8513" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="8519:8537" ph="/**...*/" />
-            <marker date="1518010089923" expanded="true" signature="8634:8662" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="8746:8838" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="8902:8965" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="9043:9128" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="9215:9309" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="9384:9459" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="9532:9607" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="9613:9631" ph="/**...*/" />
-            <marker date="1518010089923" expanded="true" signature="9693:9700" ph="{}" />
-            <marker date="1518010089923" expanded="true" signature="9782:9866" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="9985:10077" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="10161:10245" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="10251:10269" ph="/**...*/" />
-            <marker date="1518010089923" expanded="true" signature="10354:10382" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="10449:10519" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="10525:10543" ph="/**...*/" />
-            <marker date="1518010089923" expanded="true" signature="10635:10710" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="10804:10893" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="10899:10917" ph="/**...*/" />
-            <marker date="1518010089923" expanded="true" signature="11041:11095" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="11179:11263" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="11346:11430" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="11497:11589" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="11671:11753" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="11821:11891" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="11965:12041" ph="{...}" />
-            <marker date="1518010089923" expanded="false" signature="12082:12093" ph=" { " />
-            <marker date="1518010089923" expanded="false" signature="12117:12123" ph=" }" />
-            <marker date="1518010089923" expanded="true" signature="12190:12258" ph="{...}" />
-            <marker date="1518010089923" expanded="false" signature="12319:12330" ph=" { " />
-            <marker date="1518010089923" expanded="false" signature="12364:12370" ph=" }" />
-            <marker date="1518010089923" expanded="false" signature="12433:12444" ph=" { " />
-            <marker date="1518010089923" expanded="false" signature="12479:12485" ph=" }" />
-            <marker date="1518010089923" expanded="true" signature="12576:12645" ph="{...}" />
-            <marker date="1518010089923" expanded="false" signature="12708:12719" ph=" { " />
-            <marker date="1518010089923" expanded="false" signature="12754:12760" ph=" }" />
-            <marker date="1518010089923" expanded="true" signature="12851:12920" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="13002:13062" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="13180:13267" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="13374:16834" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="16910:17172" ph="{...}" />
-            <marker date="1518010089923" expanded="false" signature="17227:17238" ph=" { " />
-            <marker date="1518010089923" expanded="false" signature="17263:17269" ph=" }" />
-            <marker date="1518010089923" expanded="true" signature="17345:17506" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="17583:17775" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="17895:18009" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="18110:18213" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="18292:18390" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="18488:18597" ph="{...}" />
-            <marker date="1518010089923" expanded="true" signature="18678:18946" ph="{...}" />
-            <marker date="1518010089923" expanded="false" signature="19015:19026" ph=" { " />
-            <marker date="1518010089923" expanded="false" signature="19065:19071" ph=" }" />
-            <marker date="1518010089923" expanded="false" signature="19108:19119" ph=" { " />
-            <marker date="1518010089923" expanded="false" signature="19147:19153" ph=" }" />
-            <marker date="1518010089923" expanded="false" signature="19195:19206" ph=" { " />
-            <marker date="1518010089923" expanded="false" signature="19239:19245" ph=" }" />
-            <marker date="1518010089923" expanded="true" signature="19320:19452" ph="{...}" />
-            <marker date="1518010089923" expanded="false" signature="19516:19527" ph=" { " />
-            <marker date="1518010089923" expanded="false" signature="19552:19558" ph=" }" />
-            <marker date="1518010089923" expanded="false" signature="19639:19650" ph=" { " />
-            <marker date="1518010089923" expanded="false" signature="19684:19690" ph=" }" />
-            <marker date="1518010089923" expanded="true" signature="19696:19714" ph="/**...*/" />
-            <marker date="1518010089923" expanded="true" signature="19763:19770" ph="{}" />
-            <marker date="1518010089923" expanded="true" signature="19836:20185" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectManagementSystem.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="105" column="45" lean-forward="false" selection-start-line="105" selection-start-column="45" selection-end-line="105" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/RequestDispatcher.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="78" column="1" lean-forward="false" selection-start-line="78" selection-start-column="1" selection-end-line="78" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="476">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <marker date="1521222632419" expanded="false" signature="0:104" ph="/.../" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateProject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="33" selection-end-column="5" />
+        <state relative-caret-position="442">
+          <caret line="33" column="5" lean-forward="false" selection-start-line="22" selection-start-column="7" selection-end-line="33" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateDeveloper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="33" column="58" lean-forward="false" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="340">
+          <caret line="20" column="62" lean-forward="false" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/create/createProject.jsp">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4b755cdd-9b52-409d-a30c-987808befb88/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectManagementSystem.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="13" column="68" lean-forward="false" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="68" />
+        <state relative-caret-position="160">
+          <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hibernateFunctionality/HibernateFunctionality.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="61" column="11" lean-forward="false" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
+          <folding>
+            <marker date="1521790622676" expanded="true" signature="1645:1701" ph="CREATE TABLE... IF" />
+            <marker date="1521790622676" expanded="true" signature="2943:3169" ph="SELECT sum(d... developers" />
+            <marker date="1521790622676" expanded="true" signature="5971:6232" ph="select cost,... projects" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateDeveloper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="33" column="61" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="33" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateCustomer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/view/create/createMenu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="160">
+          <caret line="17" column="51" lean-forward="false" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="100" column="1" lean-forward="true" selection-start-line="100" selection-start-column="1" selection-end-line="100" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/create/createCustomer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/view/create/createDeveloper.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-299">
-          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        <state relative-caret-position="109">
+          <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/create/createProject.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="35" column="6" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
           <folding />
         </state>
       </provider>

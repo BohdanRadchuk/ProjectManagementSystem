@@ -8,9 +8,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>$Title$</title>
+    <title>CreateCustomer</title>
 </head>
 <body>
-$END$
+
+
+<div>
+    <a class="button5" href="/view/create/createMenu.html">back</a>
+</div>
 </body>
 </html>
