@@ -13,8 +13,8 @@
 </head>
 <body bgcolor="#acffb5">
 
-<h2>Add new Project</h2>
-<form action="/createProject" method="POST">
+<h2 class="text-center">Add new Project</h2>
+<form action="/createProject" method="POST" class="container-unlim">
     <h3>Project name</h3>
     <input type="hidden" name="projectId">
     <input type="text" name="projectName" placeholder="Project name"/>
@@ -28,11 +28,11 @@
     </div>
 
     <div>
-        <input class="button" type="submit" value="Add project"/>
+        <input class="button button1" type="submit" value="Add project"/>
+    </div>
+    <div>
+        <a class="buttonSmall button4" href="/view/create/createMenu.html">back</a>
     </div>
 </form>
-<div class="block_bottom">
-    <a class="button4" href="/view/create/createMenu.html">back</a>
-</div>
 </body>
 </html>

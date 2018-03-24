@@ -26,7 +26,6 @@ public class CreateCustomer extends HttpServlet{
         String custName = req.getParameter("name");
         byte stOrPr = Byte.valueOf(req.getParameter("stOrPr"));
 
-
         hibFunc.hibCreateNewCustomer(custName,stOrPr);
         resp.sendRedirect("http://localhost:8080/createCust");
     }
