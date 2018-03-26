@@ -56,8 +56,8 @@ public class HibernateProjectsDAOImpl implements ProjectsDAO {
     @Override
     public List<Projects> getAll() {
         Session session = HibernateFactory.getSessionFactory().openSession();
-        List<Projects> developers = session.createQuery("from Projects").list();
+        List<Projects> projects = session.createQuery("from Projects").list();
         session.close();
-        return developers;
+        return projects;
     }
 }

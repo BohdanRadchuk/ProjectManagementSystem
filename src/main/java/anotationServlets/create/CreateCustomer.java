@@ -23,9 +23,9 @@ public class CreateCustomer extends HttpServlet{
         }
         HibernateFunctionality hibFunc = new HibernateFunctionality();
 
-        String custName = req.getParameter("name");
+        String custName = req.getParameter("custName");
         byte stOrPr = Byte.valueOf(req.getParameter("stOrPr"));
-
+        System.out.println(stOrPr);
         hibFunc.hibCreateNewCustomer(custName,stOrPr);
         resp.sendRedirect("http://localhost:8080/createCust");
     }

@@ -14,7 +14,7 @@
 <body bgcolor="#acffb5">
 
 <h2 class=" text-center">Add new Developer</h2>
-<form action="/createDev" method="POST" class="container-unlim">
+<form action="/createDev" method="POST">
     <h3>Developer first name</h3>
     <input type="hidden" name="developerId">
     <input type="text" name="firstName" placeholder="Developer first name"/>
@@ -37,12 +37,11 @@
     <div>
         <input class="button" type="submit" value="Add developer"/>
     </div>
-    <div>
-        <a class="buttonSmall button4" href="/view/create/createMenu.html">back</a>
+
+    <div class="block_bottom">
+        <a class="buttonBack" href="/view/create/createMenu.html"><span>Back</span></a>
     </div>
 
 </form>
-
-
 </body>
 </html>

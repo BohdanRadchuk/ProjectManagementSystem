@@ -5,6 +5,7 @@ import dao.hibernate.HibernateDeveloperDAOImpl;
 import dao.hibernate.HibernateProjectsDAOImpl;
 import entities.Customers;
 import entities.Developer;
+import entities.ProjectInfo;
 import entities.Projects;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -19,7 +20,6 @@ import java.util.List;
 
 public class HibernateFunctionality {
 
-   // private static final SessionFactory SESSION_FACTORY = buildSessionFactory();
     private HibernateProjectsDAOImpl hbProjImpl = new HibernateProjectsDAOImpl();
     private HibernateDeveloperDAOImpl hbDevImpl = new HibernateDeveloperDAOImpl();
     private HibernateCustomersDAOImpl hbCustImpl = new HibernateCustomersDAOImpl();
@@ -27,26 +27,6 @@ public class HibernateFunctionality {
     private Projects project;
     private Customers customer;
 
-/*    private static SessionFactory buildSessionFactory() {
-        try {
-            return new Configuration().configure().buildSessionFactory();
-        } catch (Throwable e) {
-            throw new ExceptionInInitializerError(e);
-        }
-    }
-
-    public static SessionFactory getSessionFactory() {
-        return SESSION_FACTORY;
-    }*/
-
-    //создание новой таблицы - !не работает
-    public void hibCreateNewTable(String name, String params) {
-        Session session = HibernateFactory.getSessionFactory().openSession();
-        Transaction transaction = session.beginTransaction();
-        session.createNativeQuery("CREATE TABLE IF NOT EXISTS " + name + " (" + params + ");");
-        transaction.commit();
-        session.close();
-    }
 
     //создание записей
     //проэкта
@@ -74,6 +54,8 @@ public class HibernateFunctionality {
         customer = new Customers();
         customer.setCustomerName(custName);
         customer.setStateOrPrivate(custStOrPr);
+        System.out.println(custName);
+        System.out.println(custStOrPr);
         hbCustImpl.save(customer);
     }
 
@@ -92,28 +74,31 @@ public class HibernateFunctionality {
     }
 
     //Вывод списка разработчиков отдельного проекта
-    public void hbGetDevelopersOfProject(int id_project) {
-        String sql = "SELECT DISTINCT developers.firstName, developers.secondaryName " +
+    public List<Developer> hbGetDevelopersOfProject(int id_project) {
+        String sql = "SELECT DISTINCT developers.id_dev, developers.firstName, developers.secondaryName " +
                 "FROM developers, developer_projects " +
                 "WHERE  developers.id_dev IN (" +
                 "SELECT developer_projects.id_dev " +
                 "WHERE (developer_projects.id_project = " + id_project + "));";
-        hbGetDeveloperListQuery(sql);
+
+        List<Developer> developers = hbGetDeveloperListQuery(sql);
+        System.out.println(developers);
+        return developers;
     }
 
     //Вывод списка всех Java разработчиков
-    public void hbGetJavaDevelopers() {
-        String sql = "select DISTINCT developers.firstName, developers.secondaryName " +
+    public List<Developer> hbGetJavaDevelopers() {
+        String sql = "select DISTINCT developers.id_dev, developers.firstName, developers.secondaryName " +
                 "from developers, developer_skill " +
                 "where  developers.id_dev IN (" +
                 "select  developer_skill.id_dev " +
                 "where (developer_skill.id_skill in (select id_skill from skills where branch like 'Java' )));";
-        hbGetDeveloperListQuery(sql);
+        return hbGetDeveloperListQuery(sql);
     }
 
     //Вывод списка всех middle  разработчиков
-    public List<String[]> hbGetMiddleDevelopers() {
-        String sql = "select DISTINCT developers.firstName, developers.secondaryName " +
+    public List<Developer> hbGetMiddleDevelopers() {
+        String sql = "select DISTINCT developers.id_dev, developers.firstName, developers.secondaryName " +
                 "from developers, developer_skill " +
                 "where  developers.id_dev IN (" +
                 "select  developer_skill.id_dev " +
@@ -123,26 +108,26 @@ public class HibernateFunctionality {
     }
 
     //метод для вывода списка имен и фамилий разработчиков в зависимости от выборки
-    private List<String[]> hbGetDeveloperListQuery(String sqlRequest) {
+    private List<Developer> hbGetDeveloperListQuery(String sqlRequest) {
         Session session = HibernateFactory.getSessionFactory().openSession();
 
         NativeQuery query = session.createNativeQuery(sqlRequest);
         List<Object[]> rows = (List<Object[]>) query.list();
-        List<String[]> strings = new ArrayList<>();
-        String [] stringArray = new String [2];
+        List<Developer> developers = new ArrayList<>();
         for (Object[] row : rows) {
-            stringArray[0] = (String) row[0];
-            stringArray[1] = (String) row[1];
-            strings.add(stringArray);
-            System.out.println(stringArray[0] + ", " + stringArray[1]);
+            int id = (int) row[0];
+
+            //можно выбирать весь список нужных полей и создавать объект девелопера вместо того что бы доставать из базы
+            developers.add(hbDevImpl.getById(id));
+            System.out.println();
         }
         session.close();
-        return strings;
+        return developers;
     }
 
     //Вывод списка проэктов и количества разработчиков на них
-    public void hbGetProjectsInfo() {
-        List<String> result = new ArrayList<>();
+    public List<ProjectInfo> hbGetProjectsInfo() {
+
         String sql = "select cost, ProjectName, count(developer_projects.id_dev) as DevelopersCount " +
                 "from projects, developer_projects " +
                 "where projects.id_project = developer_projects.id_project " +
@@ -151,15 +136,22 @@ public class HibernateFunctionality {
 
         NativeQuery query = session.createNativeQuery(sql);
         List<Object[]> rows = (List<Object[]>) query.list();
+        List<ProjectInfo> projectInfos = new ArrayList<>();
 
         for (Object[] row : rows) {
             Integer cost = (Integer) row[0];
             String projName = (String) row[1];
-            BigInteger amountOfDevelopers = (BigInteger) row[2];
+            BigInteger amountOfDevelopers =(BigInteger) row[2];
 
-            System.out.println(cost + ", " + projName + ", " + amountOfDevelopers);
+            ProjectInfo oneProject = new ProjectInfo();
+            oneProject.setProjectName(projName);
+            oneProject.setCost(cost);
+            oneProject.setDevelopersCount(amountOfDevelopers.intValue());
+            projectInfos.add(oneProject);
+            System.out.println(projName + ", " + cost + ", " + amountOfDevelopers);
         }
         session.close();
+        return projectInfos;
     }
 
     //обновление записей
@@ -203,5 +195,6 @@ public class HibernateFunctionality {
     public void hibDeleteCustomer(int id) {
         hbCustImpl.remove(id);
     }
+
 
 }

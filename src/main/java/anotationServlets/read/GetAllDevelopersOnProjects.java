@@ -1,6 +1,8 @@
 package anotationServlets.read;
 
-import entities.Developer;
+import dao.hibernate.HibernateProjectsDAOImpl;
+import entities.ProjectInfo;
+import entities.Projects;
 import hibernateFunctionality.HibernateFunctionality;
 
 import javax.servlet.ServletException;
@@ -12,14 +14,14 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet("/getJavaDevelopers")
-public class GetJavaDevelopers extends HttpServlet{
+@WebServlet("/getAllDevelopersOnProjects")
+public class GetAllDevelopersOnProjects extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HibernateFunctionality hbFunc = new HibernateFunctionality();
+        List<ProjectInfo> projectInfos = hbFunc.hbGetProjectsInfo();
 
-        List<Developer> javaDevs = hbFunc.hbGetJavaDevelopers();
-        req.setAttribute("developers", javaDevs);
-        req.getRequestDispatcher("view/read/readDevelopers.jsp").forward(req,resp);
+        req.setAttribute("projects", projectInfos);
+        req.getRequestDispatcher("view/read/readAllDevelopersOnProjects.jsp").forward(req,resp);
     }
 }

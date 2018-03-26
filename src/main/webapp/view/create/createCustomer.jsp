@@ -14,8 +14,8 @@
 
 <body bgcolor="#acffb5">
 
-<h2 class=" text-center">Add new Customer</h2>
-<form action="/createCust" method="POST" class="container-unlim">
+<h2 class="text-center">Add new Customer</h2>
+<form action="/createCust" method="POST">
 
     <div class="col-sm-5">
         <h3>Customer name</h3>
@@ -27,15 +27,12 @@
         <input type="text" name="stOrPr" placeholder="State or private"/>
     </div>
     <div>
-        <input class="button" type="submit" value="Add developer"/>
-    </div>
-    <div>
-        <a class="buttonSmall button4" href="/view/create/createMenu.html">back</a>
+        <input class="button" type="submit" value="Add customer"/>
     </div>
 
-
+    <div class="block_bottom">
+        <a class="buttonBack" href="/view/create/createMenu.html"><span>Back</span></a>
+    </div>
 </form>
-
-
 </body>
 </html>
