@@ -16,7 +16,7 @@ public class Customers {
     private String customerName;
 
     @Column (name = "StateOrPrivate")
-    private byte StateOrPrivate;
+    private byte stateOrPrivate;
 
     @ManyToMany
     @JoinTable (name = "customers_projects",
@@ -41,11 +41,11 @@ public class Customers {
     }
 
     public byte getStateOrPrivate() {
-        return StateOrPrivate;
+        return stateOrPrivate;
     }
 
     public void setStateOrPrivate(byte stateOrPrivate) {
-        StateOrPrivate = stateOrPrivate;
+        this.stateOrPrivate = stateOrPrivate;
     }
 
     public Set<Projects> getProjects() {

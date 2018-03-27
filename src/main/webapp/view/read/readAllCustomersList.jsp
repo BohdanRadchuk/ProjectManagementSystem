@@ -10,7 +10,11 @@
 <html>
 <head>
     <link href="../../css/styles.css" rel="stylesheet" type="text/css">
-    <title>Projects</title>
+    <title>OneProjectDevelopers</title>
+    <c:set var="1" scope="page">
+        asd
+    </c:set>
+
     <c:choose>
         <c:when test="${param.method eq 1}">
             <c:set var="bodyColor" scope="page">

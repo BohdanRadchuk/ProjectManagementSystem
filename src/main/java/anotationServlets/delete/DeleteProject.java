@@ -1,4 +1,4 @@
-package anotationServlets.read;
+package anotationServlets.delete;
 
 import dao.hibernate.HibernateProjectsDAOImpl;
 import entities.Developer;
@@ -13,8 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/getOneProjectDevelopers")
-public class GetOneProjectDevelopers extends HttpServlet {
+@WebServlet("/deleteProject")
+public class DeleteProject extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HibernateProjectsDAOImpl hbPrImpl = new HibernateProjectsDAOImpl();
@@ -28,9 +28,12 @@ public class GetOneProjectDevelopers extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String param = req.getParameter("projectId");
         int id = Integer.parseInt(param);
+        System.out.println(id);
         HibernateFunctionality hbFunc = new HibernateFunctionality();
-        List<Developer> projectDevs = hbFunc.hbGetDevelopersOfProject(id);
-        req.setAttribute("developers", projectDevs);
-        req.getRequestDispatcher("view/read/readDevelopers.jsp").forward(req,resp);
+        hbFunc.hibDeleteProject(id);
+
+        resp.sendRedirect("http://localhost:8080/deleteProject?method=3");
     }
+
 }
+

@@ -14,6 +14,16 @@ tr:nth-child(even){background-color: #f2f2f2}
     background-color: #354aaf;
     color: white;
 }
+.th2{
+    background-color: #85006b;
+    color: white;
+
+}
+.th3{
+    background-color: #af0915;
+    color: white;
+
+}
 
 .button {
     background-color: #4CAF50; /* Green */
