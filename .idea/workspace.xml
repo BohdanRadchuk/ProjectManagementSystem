@@ -7,27 +7,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb388385-724e-487f-8223-6bfff1ca1506" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteCustomer.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteDeveloper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteProject.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllCustomers.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllDevelopers.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllProjects.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/view/delete/deleteMenu.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/view/delete/deleteProjects.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/view/read/readAllCustomers.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/view/read/readAllCustomersList.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/view/update/updateMenu.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/update/UpdateCustomer.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/update/UpdateDeveloper.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/update/UpdateProject.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/view/update/updateCustomer.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/view/update/updateDeveloper.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/view/update/updateProject.jsp" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anotationServlets/CreateMenu.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetOneProjectDevelopers.java" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetOneProjectDevelopers.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Customers.java" afterPath="$PROJECT_DIR$/src/main/java/entities/Customers.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ConsoleInterface.java" afterPath="$PROJECT_DIR$/src/main/java/ConsoleInterface.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateDeveloper.java" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateDeveloper.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernateFunctionality/HibernateFunctionality.java" afterPath="$PROJECT_DIR$/src/main/java/hibernateFunctionality/HibernateFunctionality.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jdbc/Functionality.java" afterPath="$PROJECT_DIR$/src/main/java/jdbc/Functionality.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/buttons.css" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/styles.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/styles.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/create/createMenu.html" afterPath="$PROJECT_DIR$/src/main/webapp/view/create/createMenu.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/create/createCustomer.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/view/create/createCustomer.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/create/createDeveloper.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/view/create/createDeveloper.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/create/createProject.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/view/create/createProject.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/read/readAllCustomers.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/view/read/readAllCustomers.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/read/readAllCustomersList.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/read/readAllDevelopersOnProjects.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/view/read/readAllDevelopersOnProjects.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/view/read/readAllProjectsList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/view/read/readAllProjectsList.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/view/read/readDevelopers.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/view/read/readDevelopers.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/view/read/readMenu.html" afterPath="$PROJECT_DIR$/src/main/webapp/view/read/readMenu.html" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ConsoleInterface.class" afterPath="$PROJECT_DIR$/target/classes/ConsoleInterface.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JDBC/Functionality.class" afterPath="$PROJECT_DIR$/target/classes/JDBC/Functionality.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/entities/Customers.class" afterPath="$PROJECT_DIR$/target/classes/entities/Customers.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernateFunctionality/HibernateFunctionality.class" afterPath="$PROJECT_DIR$/target/classes/hibernateFunctionality/HibernateFunctionality.class" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,110 +81,107 @@
         <item name="homeworkonedb@localhost [2]" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="homeworkonedb: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="projects: table" type="98d5ac3d:MysqlImplModel$Table" />
+        <item name="developer_skill: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="deleteMenu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/delete/deleteMenu.html">
+      <file leaf-file-name="Session.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.2.12.Final/hibernate-core-5.2.12.Final-sources.jar!/org/hibernate/Session.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="32" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+            <state relative-caret-position="147">
+              <caret line="536" column="36" lean-forward="false" selection-start-line="536" selection-start-column="36" selection-end-line="536" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readMenu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/read/readMenu.html">
+      <file leaf-file-name="UpdateDeveloper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/update/UpdateDeveloper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="17" column="51" lean-forward="false" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+            <state relative-caret-position="138">
+              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/styles.css">
+      <file leaf-file-name="createCustomer.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/create/createCustomer.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="96" column="1" lean-forward="true" selection-start-line="96" selection-start-column="1" selection-end-line="96" selection-end-column="1" />
+            <state relative-caret-position="358">
+              <caret line="32" column="52" lean-forward="true" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="buttons.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/buttons.css">
+      <file leaf-file-name="createDeveloper.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/create/createDeveloper.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            <state relative-caret-position="273">
+              <caret line="45" column="52" lean-forward="false" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deleteProjects.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/delete/deleteProjects.jsp">
+      <file leaf-file-name="updateDeveloper.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updateDeveloper.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            <state relative-caret-position="358">
+              <caret line="45" column="7" lean-forward="true" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="updateMenu.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updateMenu.html">
+      <file leaf-file-name="createProject.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/create/createProject.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="74" lean-forward="false" selection-start-line="17" selection-start-column="74" selection-end-line="17" selection-end-column="74" />
+            <state relative-caret-position="358">
+              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <file leaf-file-name="updateProject.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updateProject.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="68" lean-forward="false" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
+            <state relative-caret-position="697">
+              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DeleteDeveloper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteDeveloper.java">
+      <file leaf-file-name="updateCustomer.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updateCustomer.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="36" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readAllCustomers.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/read/readAllCustomers.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="90" column="27" lean-forward="false" selection-start-line="90" selection-start-column="27" selection-end-line="90" selection-end-column="27" />
+            <state relative-caret-position="153">
+              <caret line="21" column="52" lean-forward="false" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Customers.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/entities/Customers.java">
+      <file leaf-file-name="developer_skill" pinned="false" current-in-tab="false">
+        <entry file="das://table:/fd949788/4b755cdd-9b52-409d-a30c-987808befb88/homeworkonedb.developer_skill">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Developer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/entities/Developer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+            <state relative-caret-position="283">
+              <caret line="52" column="19" lean-forward="false" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -218,18 +220,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateCustomersDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ConsoleInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateCompaniesDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateSkillsDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/CreateProject.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/test.css" />
-        <option value="$PROJECT_DIR$/src/main/java/hibernateFunctionality/HibernateFactory.java" />
-        <option value="$PROJECT_DIR$/settings.ini" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateProject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateDeveloper.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/create/createCust.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateCustomer.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/read/readAllprojects.jsp" />
@@ -241,34 +232,45 @@
         <option value="$PROJECT_DIR$/src/main/webapp/view/read/readJavaDevs.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetJavaDevelopers.java" />
         <option value="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetMiddleDevelopers.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/buttons.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/create/createProject.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/create/createCustomer.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/create/createDeveloper.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/read/readAllProjects.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/entities/ProjectInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/read/readAllDevelopersOnProjects.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllDevelopersOnProjects.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hibernateFunctionality/HibernateFunctionality.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/create/createMenu.html" />
         <option value="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetOneProjectDevelopers.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/delete/deleteProjects.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteProject.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/styles.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/delete/deleteDevelopers.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllProjects.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/read/readMenu.html" />
         <option value="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllDevelopers.java" />
         <option value="$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteDeveloper.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/read/readAllProjectsList.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/read/readDevelopers.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllCustomers.java" />
         <option value="$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteCustomer.java" />
         <option value="$PROJECT_DIR$/src/main/java/entities/Customers.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/read/readAllCustomers.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/delete/deleteMenu.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/update/updateMenu.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/styles.css" />
+        <option value="$PROJECT_DIR$/src/main/java/hibernateFunctionality/HibernateFunctionality.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ConsoleInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jdbc/Functionality.java" />
+        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateDeveloper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/update/UpdateDeveloper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/update/UpdateProject.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/buttons.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/read/readMenu.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/read/readAllCustomers.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/read/readAllCustomersList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/read/readAllDevelopersOnProjects.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/read/readAllProjectsList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/read/readDevelopers.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/update/UpdateCustomer.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/create/createDeveloper.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/mysqlDB/populateDB.sql" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/create/createCustomer.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/create/createProject.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/update/updateCustomer.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/update/updateDeveloper.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/update/updateProject.jsp" />
       </list>
     </option>
   </component>
@@ -332,6 +334,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -399,7 +402,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
+              <item name="anotationServlets" type="462c0819:PsiDirectoryNode" />
+              <item name="update" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProjectManagementSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -407,7 +411,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hibernateFunctionality" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProjectManagementSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -415,6 +419,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectManagementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mysqlDB" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProjectManagementSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -455,31 +467,12 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="delete" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectManagementSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="read" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectManagementSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
               <item name="update" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -500,8 +493,15 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CV\java\ProjectManagementSystem1\src\main\webapp\view\create" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="anotationServlets.update" />
+      <recent name="anotationServlets.read" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\java\project\moduleDZ\ProjectManagementSystem\src\main\webapp\view\update" />
@@ -509,12 +509,6 @@
       <recent name="D:\java\project\moduleDZ\ProjectManagementSystem\src\main\webapp\view\delete" />
       <recent name="D:\CV\java\ProjectManagementSystem1" />
       <recent name="D:\CV\java\ProjectManagementSystem1\src\main\webapp\view\read" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="anotationServlets.read" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\CV\java\ProjectManagementSystem1\src\main\webapp\view\create" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -669,12 +663,13 @@
       <workItem from="1521960272760" duration="12624000" />
       <workItem from="1522056684606" duration="6809000" />
       <workItem from="1522065510172" duration="9545000" />
-      <workItem from="1522138281187" duration="10021000" />
+      <workItem from="1522138281187" duration="22217000" />
+      <workItem from="1522218345286" duration="6878000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102864000" />
+    <option name="totallyTimeSpent" value="121938000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -687,33 +682,31 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40625" sideWeight="0.5060514" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23146747" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967105" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40625" sideWeight="0.5060514" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23146747" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27960527" sideWeight="0.49394855" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27631578" sideWeight="0.49394855" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18381241" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18683812" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967105" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -721,6 +714,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -731,7 +725,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateProjectsDAOImpl.java</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -740,167 +742,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/RequestDispatcher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="62" lean-forward="false" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4b755cdd-9b52-409d-a30c-987808befb88/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectManagementSystem.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateDeveloper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="33" column="61" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="33" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ConsoleInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="113" column="0" lean-forward="true" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateCompaniesDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="55" column="17" lean-forward="true" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateCustomer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="25" column="55" lean-forward="false" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/fd949788/4b755cdd-9b52-409d-a30c-987808befb88/homeworkonedb.projects">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Developer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/fd949788/4b755cdd-9b52-409d-a30c-987808befb88/homeworkonedb.skills">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/fd949788/4b755cdd-9b52-409d-a30c-987808befb88/homeworkonedb.developer_skill">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/read/GetMiddleDevelopers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="21" column="48" lean-forward="false" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/read/readMiddleDevelopers.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Projects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="52" column="16" lean-forward="false" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/ProjectInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/CreateMenu.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/create/createCustomer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/view/create/createMenu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="71" lean-forward="false" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/create/createDeveloper.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="44" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/create/createProject.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="37" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/read/readAllDevelopersOnProjects.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="35" column="17" lean-forward="true" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateProject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="32" column="65" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -908,14 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateProjectsDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="56" column="26" lean-forward="false" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -928,83 +766,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/read/readAllCustomersList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/delete/deleteDevelopers.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateDeveloperDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hibernateFunctionality/HibernateFunctionality.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="193" column="0" lean-forward="true" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
-          <folding>
-            <element signature="e#7790#7791#0" expanded="true" />
-            <element signature="e#7826#7827#0" expanded="true" />
-            <marker date="1522069253185" expanded="true" signature="2215:2441" ph="SELECT sum(d... developers" />
-            <marker date="1522069253185" expanded="true" signature="5392:5653" ph="select cost,... projects" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteProject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/delete/deleteDevelopers.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllDevelopers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
           <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/read/readAllProjectsList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="122" column="15" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="122" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/fd949788/4b755cdd-9b52-409d-a30c-987808befb88/homeworkonedb.developers">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/read/readDevelopers.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1012,9 +778,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1031,7 +794,7 @@
         <state relative-caret-position="305">
           <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1048,17 +811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteDeveloper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="36" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1066,15 +818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/read/readAllCustomers.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="90" column="27" lean-forward="false" selection-start-line="90" selection-start-column="27" selection-end-line="90" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1097,15 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="32" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/read/readMenu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="51" lean-forward="false" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1113,30 +847,319 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="68" lean-forward="false" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/buttons.css">
+    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteProject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="464">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/styles.css">
+    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateProject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="96" column="1" lean-forward="true" selection-start-line="96" selection-start-column="1" selection-end-line="96" selection-end-column="1" />
+        <state relative-caret-position="322">
+          <caret line="32" column="65" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updateMenu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="74" lean-forward="false" selection-start-line="17" selection-start-column="74" selection-end-line="17" selection-end-column="74" />
+        <state relative-caret-position="52">
+          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2448">
+          <caret line="144" column="30" lean-forward="false" selection-start-line="144" selection-start-column="30" selection-end-line="144" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdbc/Functionality.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1522159607827" expanded="true" signature="2359:2429" ph="insert into projects... " />
+            <marker date="1522159607827" expanded="true" signature="2492:2585" ph="insert into developers... " />
+            <marker date="1522159607827" expanded="true" signature="2647:2713" ph="insert into customers... " />
+            <marker date="1522159607827" expanded="true" signature="2779:2818" ph="delete from developers... " />
+            <marker date="1522159607827" expanded="true" signature="2891:2955" ph="delete from developer_projects... " />
+            <marker date="1522159607827" expanded="true" signature="3026:3086" ph="delete from developer_skill... " />
+            <marker date="1522159607827" expanded="true" signature="3150:3191" ph="delete from projects... " />
+            <marker date="1522159607827" expanded="true" signature="3265:3334" ph="delete from companies_projects... " />
+            <marker date="1522159607827" expanded="true" signature="3408:3478" ph="delete from customers_projects... " />
+            <marker date="1522159607827" expanded="true" signature="3543:3586" ph="delete from customers... " />
+            <marker date="1522159607827" expanded="true" signature="3650:3735" ph="update projects... " />
+            <marker date="1522159607827" expanded="true" signature="3801:3907" ph="update developers... " />
+            <marker date="1522159607827" expanded="true" signature="3972:4052" ph="update customers... " />
+            <marker date="1522159607827" expanded="true" signature="4235:4300" ph="CREATE TABLE... IF" />
+            <marker date="1522159607827" expanded="true" signature="4617:4885" ph="SELECT devel... developers" />
+            <marker date="1522159607827" expanded="true" signature="7458:7719" ph="select cost,... projects" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateDeveloper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/update/UpdateProject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/buttons.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="106" lean-forward="false" selection-start-line="12" selection-start-column="106" selection-end-line="12" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/read/readMenu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/read/readAllDevelopersOnProjects.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/read/readAllProjectsList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="93" column="24" lean-forward="false" selection-start-line="93" selection-start-column="24" selection-end-line="93" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/read/readDevelopers.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="88" column="30" lean-forward="true" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateCustomer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="29" column="62" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="29" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/read/readAllCustomersList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="true" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/read/readAllCustomers.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="95" column="27" lean-forward="true" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/update/UpdateCustomer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="51" column="56" lean-forward="false" selection-start-line="51" selection-start-column="56" selection-end-line="51" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteDeveloper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateProjectsDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hibernateFunctionality/HibernateFunctionality.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
+          <folding>
+            <element signature="e#7708#7709#0" expanded="true" />
+            <element signature="e#7745#7746#0" expanded="true" />
+            <element signature="e#7827#7828#0" expanded="true" />
+            <marker date="1522159607963" expanded="true" signature="2215:2441" ph="SELECT sum(d... developers" />
+            <marker date="1522159607963" expanded="true" signature="5392:5653" ph="select cost,... projects" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ConsoleInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateDeveloperDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="33" column="20" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.2.12.Final/hibernate-core-5.2.12.Final-sources.jar!/org/hibernate/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="536" column="36" lean-forward="false" selection-start-line="536" selection-start-column="36" selection-end-line="536" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Developer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="52" column="19" lean-forward="false" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/fd949788/4b755cdd-9b52-409d-a30c-987808befb88/homeworkonedb.developers">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mysqlDB/populateDB.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="39" column="103" lean-forward="false" selection-start-line="39" selection-start-column="103" selection-end-line="39" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mysqlDB/initDB.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1522224319676" expanded="true" signature="50:252" ph="CREATE TABLE... developers" />
+            <marker date="1522224319676" expanded="true" signature="254:467" ph="CREATE TABLE... skills" />
+            <marker date="1522224319676" expanded="true" signature="469:619" ph="CREATE TABLE... projects" />
+            <marker date="1522224319676" expanded="true" signature="621:771" ph="CREATE TABLE... companies" />
+            <marker date="1522224319676" expanded="true" signature="773:923" ph="CREATE TABLE... customers" />
+            <marker date="1522224319676" expanded="true" signature="925:1209" ph="CREATE TABLE... developer_projects" />
+            <marker date="1522224319676" expanded="true" signature="1211:1485" ph="CREATE TABLE... developer_skill" />
+            <marker date="1522224319676" expanded="true" signature="1487:1786" ph="CREATE TABLE... companies_projects" />
+            <marker date="1522224319676" expanded="true" signature="1788:2091" ph="CREATE TABLE... customers_projects" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/fd949788/4b755cdd-9b52-409d-a30c-987808befb88/homeworkonedb.developer_skill">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/update/UpdateDeveloper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/create/createDeveloper.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="45" column="52" lean-forward="false" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/create/createProject.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/create/createCustomer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="32" column="52" lean-forward="true" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updateCustomer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="21" column="52" lean-forward="false" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updateDeveloper.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="45" column="7" lean-forward="true" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updateProject.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -164,7 +164,7 @@ public class HibernateFunctionality {
         hbProjImpl.update(project);
     }
 
-    public void hibUpdateDeveloper(int devId, String devName, String devSecName, int devAge, String devGend, int devSalary) {
+    public void hibUpdateDeveloper(int devId, String devName, String devSecName, int devAge, String devGend, long devSalary) {
         developer = hbDevImpl.getById(devId);
         developer.setId(devId);
         developer.setFirstName(devName);

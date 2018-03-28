@@ -191,7 +191,7 @@ public class ConsoleInterface {
             scanner.nextLine();
             String devGend = scanner.nextLine();
             System.out.println("введите новый зарплату разработчика");
-            int devSalary = scanner.nextInt();
+            long devSalary = scanner.nextLong();
             if (hibOrJDBC) {
                 hibFunc.hibUpdateDeveloper(devId, devName, devSecName, devAge, devGend, devSalary);
             } else storage.updateDeveloper(devId, devName, devSecName, devAge, devGend, devSalary);

@@ -13,7 +13,7 @@
     <title>AllProjects</title>
 </head>
 <body bgcolor="#94d9e7">
-<h1 class="text-center">All Projects Info</h1>
+<h1 class="text-center">Projects Info</h1>
 
 <table border="1px">
     <tr class="th1">

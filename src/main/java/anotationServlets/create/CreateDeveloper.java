@@ -28,7 +28,7 @@ public class CreateDeveloper extends HttpServlet{
         String devSecName = req.getParameter("secondaryName");
         int age =  Integer.valueOf(req.getParameter("age"));
         String gender = req.getParameter("gender");
-        Long salary = Long.valueOf(req.getParameter("salary"));
+        long salary = Long.valueOf(req.getParameter("salary"));
 
         hibFunc.hibCreateNewDeveloper(devFirstName, devSecName, age, gender, salary);
         resp.sendRedirect("http://localhost:8080/createDev");

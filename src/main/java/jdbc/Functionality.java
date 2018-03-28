@@ -310,13 +310,13 @@ public class Functionality {
         }
     }
 
-    public void updateDeveloper( int id_dev, String firstName, String secondaryName, int age, String gender, int salary) {
+    public void updateDeveloper( int id_dev, String firstName, String secondaryName, int age, String gender, long salary) {
         try {
             updateDeveloperSt.setString(1, firstName);
             updateDeveloperSt.setString(2, secondaryName);
             updateDeveloperSt.setInt(3, age);
             updateDeveloperSt.setString(4, gender);
-            updateDeveloperSt.setInt(5, salary);
+            updateDeveloperSt.setLong(5, salary);
             updateDeveloperSt.setInt(6, id_dev);
             updateDeveloperSt.executeUpdate();
         } catch (SQLException e) {

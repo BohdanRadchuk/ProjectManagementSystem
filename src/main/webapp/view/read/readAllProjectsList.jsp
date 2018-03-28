@@ -91,7 +91,7 @@
     </c:choose>
 </head>
 <body bgcolor="${bodyColor}">
-<h1 class="text-center">All Projects</h1>
+<h1 class="text-center">Projects</h1>
 
 <table border="1px">
     <tr class="${thClass}">
