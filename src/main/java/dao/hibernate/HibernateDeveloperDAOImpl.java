@@ -4,11 +4,11 @@ import dao.DeveloperDAO;
 import entities.Developer;
 import hibernateFunctionality.HibernateFactory;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+
 import java.util.List;
 
-public class HibernateDeveloperDAOImpl implements DeveloperDAO{
+public class HibernateDeveloperDAOImpl implements DeveloperDAO {
 
     @Override
     public void save(Developer developer) {

@@ -14,8 +14,8 @@
         <property name="hibernate.connection.password">root</property>
 
 
-        <property name = "show_sql">true</property>
-        <property name = "format_sql">true</property>
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
 
         <!-- авто создание, если отсутствует таблица соответственно к анотациям или мапингу и изменение структуры
         таблиц (ALTER TABLE и тд) в следствии выполения кода java не желательно использовать в промышленом коде-->

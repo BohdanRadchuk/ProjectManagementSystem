@@ -4,24 +4,24 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@Table (name = "customers" )
+@Table(name = "customers")
 public class Customers {
 
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
     private int id_customer;
 
-    @Column (name = "CustomerName")
+    @Column(name = "CustomerName")
     private String customerName;
 
-    @Column (name = "StateOrPrivate")
+    @Column(name = "StateOrPrivate")
     private byte stateOrPrivate;
 
     @ManyToMany
-    @JoinTable (name = "customers_projects",
-                joinColumns = @JoinColumn (name = "id_customer"),
-                inverseJoinColumns = @JoinColumn(name = "id_project"))
+    @JoinTable(name = "customers_projects",
+            joinColumns = @JoinColumn(name = "id_customer"),
+            inverseJoinColumns = @JoinColumn(name = "id_project"))
     private Set<Projects> projects;
 
     public int getId_customer() {

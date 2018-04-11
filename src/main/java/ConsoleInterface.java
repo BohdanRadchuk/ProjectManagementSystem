@@ -10,11 +10,11 @@ public class ConsoleInterface {
     private Functionality storage;
     private boolean hibOrJDBC;
 
-    public ConsoleInterface(boolean hibOrJDBC) {        //принимаем булеан переменную и создаем ресурс для работы с базой
+    public ConsoleInterface(boolean hibOrJDBC) {        //takes boolean variable and creates required resource
         this.hibOrJDBC = hibOrJDBC;
         if (hibOrJDBC) {
-            hibFunc = new HibernateFunctionality();     //если будем использовать хибернейт
-        } else storage = new Functionality();             //если будем использовать jdbc
+            hibFunc = new HibernateFunctionality();     //if using hibernate
+        } else storage = new Functionality();             //if using jdbc
     }
 
     public void startMenu() {
@@ -52,11 +52,9 @@ public class ConsoleInterface {
 
                 scanner.nextLine();
                 String tableName = scanner.nextLine();
-                System.out.println("Введите все поля с определением всех параметров, например: id INT AUTO_INCREMENT PRIMARY KEY, firstName VARCHAR(100) NOT NULL ");
+                System.out.println("Введите все поля с определением всех параметров, например: " +
+                        "id INT AUTO_INCREMENT PRIMARY KEY, firstName VARCHAR(100) NOT NULL ");
                 String sqlColumns = scanner.nextLine();
-                if (hibOrJDBC) {                                                 //перед выполнением любого запроса проверка не тип используемой связи
-                    //hibFunc.hibCreateNewTable(tableName, sqlColumns);         //запрос происходит, но на базе не отображается никак
-                } else storage.createNewTable(tableName, sqlColumns);
             }
         }
         if (choice == 2) {
@@ -137,12 +135,12 @@ public class ConsoleInterface {
         }
         if (choice == 3) {
             if (hibOrJDBC) {
-                hibFunc.hbGetJavaDevelopers();
+                System.out.println(hibFunc.hbGetJavaDevelopers());
             } else storage.getJavaDevelopers();
         }
         if (choice == 4) {
             if (hibOrJDBC) {
-                hibFunc.hbGetMiddleDevelopers();
+                System.out.println(hibFunc.hbGetMiddleDevelopers());
             } else storage.getMiddleDevelopers();
         }
         if (choice == 5) {
@@ -254,7 +252,7 @@ public class ConsoleInterface {
         } else otherOperation();
     }
 
-    private void otherOperation() {      //меню возврата в главное меню или выхода (используется после операций)
+    private void otherOperation() {      //return to main menu
         System.out.println("хотите выполнить другую операцию ?");
         System.out.println("1 - Да, вернуться в главное меню");
         System.out.println("0 - Нет, закрыть програму");
@@ -272,7 +270,7 @@ public class ConsoleInterface {
         }
     }
 
-    private void exitMenu() {        //меню выхода для закрытия соединения
+    private void exitMenu() {        //exit menu for closing connection
         if (hibOrJDBC) {
             HibernateFactory.shutdown();
         } else storage.closeConnection();

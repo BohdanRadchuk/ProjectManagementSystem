@@ -38,9 +38,9 @@ public class Functionality {
     private PreparedStatement deleteCustomerSt;
 
     public Functionality() {
-       readSettings();
-       initConnection();
-       initStatements();
+        readSettings();
+        initConnection();
+        initStatements();
     }
 
     private void readSettings() {
@@ -56,7 +56,8 @@ public class Functionality {
         }
     }
 
-    private void initConnection (){
+    //creating connection to db
+    private void initConnection() {
         try {
             Class.forName(dbDriver);
         } catch (ClassNotFoundException e) {
@@ -69,29 +70,39 @@ public class Functionality {
         }
     }
 
-
-    private void initStatements (){
+    //initializing statements
+    private void initStatements() {
         try {
             statement = connection.createStatement();
-            addProjectSt = connection.prepareStatement("insert into projects (ProjectName, description, cost) values (?, ?, ?);");
-            addDeveloperSt = connection.prepareStatement("insert into developers (firstName, secondaryName, age, gender, salary) values (?, ?, ?, ?, ?);");
-            addCustomerSt = connection.prepareStatement("insert into customers (CustomerName, StateOrPrivate) values (?, ?);");
-            deleteDeveloperSt = connection.prepareStatement("delete from developers where id_dev = ?;");
-            deleteDeveloperProjectSt = connection.prepareStatement("delete from developer_projects where id_project =? or id_dev = ?;");
-            deleteDeveloperSkillSt = connection.prepareStatement("delete from developer_skill where id_skill = ? or id_dev = ?;");
-            deleteProjectSt = connection.prepareStatement("delete from projects where id_project = ?;");
-            deleteCompaniesProjectsSt = connection.prepareStatement("delete from companies_projects where id_company = ? or id_project = ?;");
-            deleteCustomersProjectsSt = connection.prepareStatement("delete from customers_projects where id_customer = ? or id_project = ?;");
-            deleteCustomerSt = connection.prepareStatement("delete from customers where id_customer = ?;");
-            updateProjectSt = connection.prepareStatement("update projects set ProjectName = ? , description = ? , cost = ? where id_project = ?;");
-            updateDeveloperSt = connection.prepareStatement("update developers set firstName = ? , secondaryName = ? , age = ?, gender = ?, salary = ? where id_dev = ?;");
-            updateCustomerSt = connection.prepareStatement("update customers set CustomerName = ? , StateOrPrivate = ? where id_customer = ?;");
+            addProjectSt = connection.prepareStatement("INSERT INTO projects (ProjectName, description, cost) " +
+                    "VALUES (?, ?, ?);");
+            addDeveloperSt = connection.prepareStatement("INSERT INTO developers (firstName, secondaryName, " +
+                    "age, gender, salary) VALUES (?, ?, ?, ?, ?);");
+            addCustomerSt = connection.prepareStatement("INSERT INTO customers (CustomerName, StateOrPrivate) " +
+                    "VALUES (?, ?);");
+            deleteDeveloperSt = connection.prepareStatement("DELETE FROM developers WHERE id_dev = ?;");
+            deleteDeveloperProjectSt = connection.prepareStatement("DELETE FROM developer_projects " +
+                    "WHERE id_project =? OR id_dev = ?;");
+            deleteDeveloperSkillSt = connection.prepareStatement("DELETE FROM developer_skill " +
+                    "WHERE id_skill = ? OR id_dev = ?;");
+            deleteProjectSt = connection.prepareStatement("DELETE FROM projects WHERE id_project = ?;");
+            deleteCompaniesProjectsSt = connection.prepareStatement("DELETE FROM companies_projects " +
+                    "WHERE id_company = ? OR id_project = ?;");
+            deleteCustomersProjectsSt = connection.prepareStatement("DELETE FROM customers_projects " +
+                    "WHERE id_customer = ? OR id_project = ?;");
+            deleteCustomerSt = connection.prepareStatement("DELETE FROM customers WHERE id_customer = ?;");
+            updateProjectSt = connection.prepareStatement("UPDATE projects SET ProjectName = ? , " +
+                    "description = ? , cost = ? WHERE id_project = ?;");
+            updateDeveloperSt = connection.prepareStatement("UPDATE developers SET firstName = ? , " +
+                    "secondaryName = ? , age = ?, gender = ?, salary = ? WHERE id_dev = ?;");
+            updateCustomerSt = connection.prepareStatement("UPDATE customers SET CustomerName = ? , " +
+                    "StateOrPrivate = ? WHERE id_customer = ?;");
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
-
+    //creating new table
     public void createNewTable(String tableName, String sqlColumns) {
         String sql = "CREATE TABLE IF NOT EXISTS " + tableName + " (" + sqlColumns + ");";
         try {
@@ -103,10 +114,13 @@ public class Functionality {
         }
     }
 
+    //printing projects list with sum of all developers salary
     public void getSumOfProjectSalary(int projId) {
 
-        String sql = "SELECT developer_projects.id_project as id_proj, sum(developers.salary) AS SumOfSalary FROM developers, developer_projects " +
-                "WHERE developers.id_dev IN ( SELECT DISTINCT developer_projects.id_dev where developer_projects.id_project = " + projId + ");";
+        String sql = "SELECT developer_projects.id_project as id_proj, sum(developers.salary) AS SumOfSalary " +
+                "FROM developers, developer_projects " +
+                "WHERE developers.id_dev IN ( SELECT DISTINCT developer_projects.id_dev " +
+                "where developer_projects.id_project = " + projId + ");";
 
         ResultSet rs = null;
         try {
@@ -128,6 +142,7 @@ public class Functionality {
         }
     }
 
+    //printing developers working on project with Id
     public void getProjectDevelopers(int projNumber) {
         String sql = "SELECT DISTINCT developers.firstName, developers.secondaryName " +
                 "FROM developers, developer_projects " +
@@ -137,6 +152,7 @@ public class Functionality {
         getDevelopersList(sql);
     }
 
+    //printing all java developers
     public void getJavaDevelopers() {
         String sql = "select DISTINCT developers.firstName, developers.secondaryName " +
                 "from developers, developer_skill " +
@@ -146,6 +162,7 @@ public class Functionality {
         getDevelopersList(sql);
     }
 
+    //printing all middle developers
     public void getMiddleDevelopers() {
         String sql = "select DISTINCT developers.firstName, developers.secondaryName " +
                 "from developers, developer_skill " +
@@ -155,6 +172,7 @@ public class Functionality {
         getDevelopersList(sql);
     }
 
+    //gets developer firstname and secondaryname depending on sql query
     private void getDevelopersList(String sql) {
         List<String> result = new ArrayList<>();
 
@@ -176,12 +194,13 @@ public class Functionality {
         printResult(result);
     }
 
+    //printing projects list and amount of developers working on it
     public void getProjectsInfo() {
         List<String> result = new ArrayList<>();
-        String sql = "select cost, ProjectName, count(developer_projects.id_dev) as DevelopersCount " +
-                "from projects, developer_projects " +
-                "where projects.id_project = developer_projects.id_project " +
-                "group by projects.id_project;";
+        String sql = "SELECT cost, ProjectName, count(developer_projects.id_dev) AS DevelopersCount " +
+                "FROM projects, developer_projects " +
+                "WHERE projects.id_project = developer_projects.id_project " +
+                "GROUP BY projects.id_project;";
         ResultSet rs = null;
         try {
             rs = statement.executeQuery(sql);
@@ -201,13 +220,14 @@ public class Functionality {
         printResult(result);
     }
 
-    private void printResult(List <String> result){         //выводит на экран полученые результаты
+    private void printResult(List<String> result) {         //printing lists to console
         for (String singleResult : result
                 ) {
             System.out.println(singleResult);
         }
     }
 
+    //creating new project
     public void addNewProject(String projectName, String description, int cost) {
         try {
             addProjectSt.setString(1, projectName);
@@ -219,6 +239,7 @@ public class Functionality {
         }
     }
 
+    //creating new developer
     public void addNewDeveloper(String firstName, String secondaryName, int age, String gender, long salary) {
         try {
             addDeveloperSt.setString(1, firstName);
@@ -232,6 +253,7 @@ public class Functionality {
         }
     }
 
+    //creating new customer
     public void addNewCustomer(String customerName, boolean stateOrPrivate) {
         try {
             addCustomerSt.setString(1, customerName);
@@ -242,7 +264,8 @@ public class Functionality {
         }
     }
 
-    public void deleteDeveloper(int id) {          //удаляет сначало все связи в связующих таблицах, потом уже саму запись
+    //delete developer with id
+    public void deleteDeveloper(int id) {       //delete all connections and then delete developer
         try {
             deleteDeveloperProjectSt.setInt(1, 0);
             deleteDeveloperProjectSt.setInt(2, id);
@@ -257,6 +280,7 @@ public class Functionality {
         }
     }
 
+    //delete project with id
     public void deleteProject(int id) {        //удаляет сначало все связи в связующих таблицах, потом уже саму запись
         try {
             deleteDeveloperProjectSt.setInt(1, id);
@@ -275,6 +299,7 @@ public class Functionality {
         }
     }
 
+    //delete customer with id
     public void deleteCustomer(int id) {       //удаляет сначало все связи в связующих таблицах, потом уже саму запись
         try {
             deleteCustomersProjectsSt.setInt(1, id);
@@ -287,6 +312,7 @@ public class Functionality {
         }
     }
 
+    //update project with id, takes all required project fields
     public void updateProject(int id_project, String projectName, String description, int cost) {
         try {
             updateProjectSt.setString(1, projectName);
@@ -299,6 +325,7 @@ public class Functionality {
         }
     }
 
+    //update customer with id, takes all required customer fields
     public void updateCustomer(String customerName, boolean stOrPr, int id_customer) {
         try {
             updateCustomerSt.setString(1, customerName);
@@ -310,7 +337,9 @@ public class Functionality {
         }
     }
 
-    public void updateDeveloper( int id_dev, String firstName, String secondaryName, int age, String gender, long salary) {
+    //update developer with id, takes all required developer fields
+    public void updateDeveloper(int id_dev, String firstName, String secondaryName, int age, String gender, long salary)
+    {
         try {
             updateDeveloperSt.setString(1, firstName);
             updateDeveloperSt.setString(2, secondaryName);
@@ -324,13 +353,12 @@ public class Functionality {
         }
     }
 
-    public void closeConnection (){
+    //closing connection, runs in the end of program using
+    public void closeConnection() {
         try {
             connection.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
-
-
 }

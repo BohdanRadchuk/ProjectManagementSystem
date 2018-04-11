@@ -7,11 +7,11 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@Table (name = "skills")
-public class Skills{
+@Table(name = "skills")
+public class Skills {
 
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
     private int id_skill;
 
@@ -23,8 +23,8 @@ public class Skills{
 
     @ManyToMany
     @JoinTable(name = "developer_skill",
-            joinColumns =  @JoinColumn (name = "id_skill"),
-            inverseJoinColumns = @JoinColumn (name = "id_dev"))
+            joinColumns = @JoinColumn(name = "id_skill"),
+            inverseJoinColumns = @JoinColumn(name = "id_dev"))
     private Set<Developer> developers;
 
     public int getId_skill() {

@@ -9,15 +9,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-
-@WebServlet("/getAllProjects")
-public class GetAllProjects extends HttpServlet {
+@WebServlet("/getAmountOfDevelopersOnProjects")
+public class GetAmountOfDevelopersOnProjects extends HttpServlet {
     private ProjectManager projectManager = new ProjectManager();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        projectManager.projectAllGet(req, resp);
+        projectManager.projectReadAmountOfDevelopersGet(req, resp);
     }
 }
-
-

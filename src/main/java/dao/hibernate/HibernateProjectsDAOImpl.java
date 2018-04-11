@@ -1,21 +1,14 @@
 package dao.hibernate;
 
 import dao.ProjectsDAO;
-
 import entities.Projects;
 import hibernateFunctionality.HibernateFactory;
-import hibernateFunctionality.HibernateFunctionality;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.hibernate.cfg.Configuration;
 
 import java.util.List;
 
 public class HibernateProjectsDAOImpl implements ProjectsDAO {
-
-    public HibernateProjectsDAOImpl() {
-    }
 
     @Override
     public void save(Projects projects) {

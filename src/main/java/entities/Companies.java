@@ -4,24 +4,24 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@Table (name = "companies")
+@Table(name = "companies")
 public class Companies {
 
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
     private int id_company;
 
-    @Column (name = "CompanyName")
+    @Column(name = "CompanyName")
     private String companyName;
 
-    @Column (name = "CompanyCreationYear")
+    @Column(name = "CompanyCreationYear")
     private short companyCreationYear;
 
     @ManyToMany
     @JoinTable(name = "companies_projects",
-                joinColumns = @JoinColumn(name = "id_company"),
-                inverseJoinColumns = @JoinColumn(name = "id_project"))
+            joinColumns = @JoinColumn(name = "id_company"),
+            inverseJoinColumns = @JoinColumn(name = "id_project"))
     private Set<Projects> projects;
 
     public int getId_company() {

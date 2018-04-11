@@ -8,13 +8,10 @@ import entities.Developer;
 import entities.ProjectInfo;
 import entities.Projects;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
-import org.hibernate.cfg.Configuration;
 import org.hibernate.query.NativeQuery;
+
 import java.math.BigDecimal;
 import java.math.BigInteger;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,8 +25,8 @@ public class HibernateFunctionality {
     private Customers customer;
 
 
-    //создание записей
-    //проэкта
+    //create records
+    //create project
     public void hibCreateNewProject(String projectName, String description, int cost) {
         project = new Projects();
         project.setProjectName(projectName);
@@ -38,7 +35,7 @@ public class HibernateFunctionality {
         hbProjImpl.save(project);
     }
 
-    //разработчика
+    //create developer
     public void hibCreateNewDeveloper(String firstName, String secondaryName, int age, String gender, long salary) {
         developer = new Developer();
         developer.setFirstName(firstName);
@@ -49,7 +46,7 @@ public class HibernateFunctionality {
         hbDevImpl.save(developer);
     }
 
-    //пользователя
+    //create customer
     public void hibCreateNewCustomer(String custName, byte custStOrPr) {
         customer = new Customers();
         customer.setCustomerName(custName);
@@ -59,11 +56,12 @@ public class HibernateFunctionality {
         hbCustImpl.save(customer);
     }
 
-    //считывание даных
-    //Вывод зарплаты всех разработчиков отдельного проекта
+    //reading data
+    //get salary of all developers working on a single project
     public void hbGetSumOfProjectSalary(int projId) {
         String sql = "SELECT sum(developers.salary) AS SumOfSalary FROM developers, developer_projects " +
-                "WHERE developers.id_dev IN ( SELECT DISTINCT developer_projects.id_dev where developer_projects.id_project = " + projId + ");";
+                "WHERE developers.id_dev IN ( SELECT DISTINCT developer_projects.id_dev " +
+                "where developer_projects.id_project = " + projId + ");";
 
         Session session = HibernateFactory.getSessionFactory().openSession();
 
@@ -73,7 +71,7 @@ public class HibernateFunctionality {
         session.close();
     }
 
-    //Вывод списка разработчиков отдельного проекта
+    //get all developers working on a single project
     public List<Developer> hbGetDevelopersOfProject(int id_project) {
         String sql = "SELECT DISTINCT developers.id_dev, developers.firstName, developers.secondaryName " +
                 "FROM developers, developer_projects " +
@@ -86,7 +84,7 @@ public class HibernateFunctionality {
         return developers;
     }
 
-    //Вывод списка всех Java разработчиков
+    //get all Java developers
     public List<Developer> hbGetJavaDevelopers() {
         String sql = "select DISTINCT developers.id_dev, developers.firstName, developers.secondaryName " +
                 "from developers, developer_skill " +
@@ -96,7 +94,7 @@ public class HibernateFunctionality {
         return hbGetDeveloperListQuery(sql);
     }
 
-    //Вывод списка всех middle  разработчиков
+    //get all middle developers
     public List<Developer> hbGetMiddleDevelopers() {
         String sql = "select DISTINCT developers.id_dev, developers.firstName, developers.secondaryName " +
                 "from developers, developer_skill " +
@@ -107,7 +105,7 @@ public class HibernateFunctionality {
         return hbGetDeveloperListQuery(sql);
     }
 
-    //метод для вывода списка имен и фамилий разработчиков в зависимости от выборки
+    //method that returns developers using different sql queries
     private List<Developer> hbGetDeveloperListQuery(String sqlRequest) {
         Session session = HibernateFactory.getSessionFactory().openSession();
 
@@ -117,7 +115,6 @@ public class HibernateFunctionality {
         for (Object[] row : rows) {
             int id = (int) row[0];
 
-            //можно выбирать весь список нужных полей и создавать объект девелопера вместо того что бы доставать из базы
             developers.add(hbDevImpl.getById(id));
             System.out.println();
         }
@@ -125,13 +122,13 @@ public class HibernateFunctionality {
         return developers;
     }
 
-    //Вывод списка проэктов и количества разработчиков на них
+    //get projects list with amount of developers on it
     public List<ProjectInfo> hbGetProjectsInfo() {
 
-        String sql = "select cost, ProjectName, count(developer_projects.id_dev) as DevelopersCount " +
-                "from projects, developer_projects " +
-                "where projects.id_project = developer_projects.id_project " +
-                "group by projects.id_project;";
+        String sql = "SELECT cost, ProjectName, count(developer_projects.id_dev) AS DevelopersCount " +
+                "FROM projects, developer_projects " +
+                "WHERE projects.id_project = developer_projects.id_project " +
+                "GROUP BY projects.id_project;";
         Session session = HibernateFactory.getSessionFactory().openSession();
 
         NativeQuery query = session.createNativeQuery(sql);
@@ -141,7 +138,7 @@ public class HibernateFunctionality {
         for (Object[] row : rows) {
             Integer cost = (Integer) row[0];
             String projName = (String) row[1];
-            BigInteger amountOfDevelopers =(BigInteger) row[2];
+            BigInteger amountOfDevelopers = (BigInteger) row[2];
 
             ProjectInfo oneProject = new ProjectInfo();
             oneProject.setProjectName(projName);
@@ -154,7 +151,7 @@ public class HibernateFunctionality {
         return projectInfos;
     }
 
-    //обновление записей
+    //update records
     public void hibUpdateProject(int prId, String prName, String prDescr, int prCost) {
         project = hbProjImpl.getById(prId);
         project.setId_project(prId);
@@ -164,7 +161,8 @@ public class HibernateFunctionality {
         hbProjImpl.update(project);
     }
 
-    public void hibUpdateDeveloper(int devId, String devName, String devSecName, int devAge, String devGend, long devSalary) {
+    public void hibUpdateDeveloper(int devId, String devName, String devSecName, int devAge,
+                                   String devGend, long devSalary) {
         developer = hbDevImpl.getById(devId);
         developer.setId(devId);
         developer.setFirstName(devName);
@@ -183,7 +181,7 @@ public class HibernateFunctionality {
         hbCustImpl.update(customer);
     }
 
-    //удаление записей
+    //delete records
     public void hibDeleteProject(int id) {
         hbProjImpl.remove(id);
     }

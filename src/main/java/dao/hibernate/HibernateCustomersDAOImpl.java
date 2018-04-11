@@ -1,18 +1,14 @@
 package dao.hibernate;
 
 import dao.CustomersDAO;
-import entities.Companies;
 import entities.Customers;
 import hibernateFunctionality.HibernateFactory;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.hibernate.cfg.Configuration;
 
 import java.util.List;
 
-public class HibernateCustomersDAOImpl implements CustomersDAO{
-
+public class HibernateCustomersDAOImpl implements CustomersDAO {
 
     @Override
     public void save(Customers customers) {

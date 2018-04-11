@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: я
-  Date: 21.03.2018
-  Time: 10:35
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
@@ -31,7 +24,6 @@
     <div>
         <input class="button" type="submit" value="Update customer"/>
     </div>
-
 </form>
 <div class="block_bottom">
     <a class="buttonBack" href="/updateProject?method=2"><span>Back</span></a>

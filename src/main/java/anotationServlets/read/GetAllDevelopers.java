@@ -1,7 +1,6 @@
 package anotationServlets.read;
 
-import dao.hibernate.HibernateDeveloperDAOImpl;
-import entities.Developer;
+import anotationServlets.managers.DeveloperManager;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,19 +8,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
-
 
 @WebServlet("/getAllDevelopers")
 public class GetAllDevelopers extends HttpServlet {
+    private DeveloperManager developerManager = new DeveloperManager();
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        HibernateDeveloperDAOImpl hbDevImpl = new HibernateDeveloperDAOImpl();
-        List<Developer> developers = hbDevImpl.getAll();
-
-        req.setAttribute("developers", developers);
-        req.getRequestDispatcher("view/read/readDevelopers.jsp").forward(req, resp);
+        developerManager.developerReadAllGet(req, resp);
     }
 }
-
-

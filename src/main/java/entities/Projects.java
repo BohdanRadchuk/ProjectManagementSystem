@@ -7,7 +7,7 @@ import java.util.Set;
 @Table(name = "projects")
 public class Projects {
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
     private int id_project;
 
@@ -22,14 +22,14 @@ public class Projects {
 
     @ManyToMany
     @JoinTable(name = "developer_projects",
-            joinColumns =  @JoinColumn (name = "id_project"),
-            inverseJoinColumns = @JoinColumn (name = "id_dev"))
+            joinColumns = @JoinColumn(name = "id_project"),
+            inverseJoinColumns = @JoinColumn(name = "id_dev"))
     private Set<Developer> developers;
 
     @ManyToMany
     @JoinTable(name = "customers_projects",
-            joinColumns =  @JoinColumn (name = "id_project"),
-            inverseJoinColumns = @JoinColumn (name = "id_customer"))
+            joinColumns = @JoinColumn(name = "id_project"),
+            inverseJoinColumns = @JoinColumn(name = "id_customer"))
     private Set<Customers> customers;
 
     @ManyToMany

@@ -1,5 +1,7 @@
-select ProjectName, cost
-from projects
-where (cost = (select min(cost)
-from projects));
+SELECT
+  ProjectName,
+  cost
+FROM projects
+WHERE (cost = (SELECT min(cost)
+               FROM projects));
 

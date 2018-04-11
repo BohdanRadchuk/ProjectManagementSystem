@@ -7,8 +7,77 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb388385-724e-487f-8223-6bfff1ca1506" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/managers/CustomerManager.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/managers/DeveloperManager.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/managers/ProjectManager.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAmountOfDevelopersOnProjects.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/delete/deleteProjects.jsp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ConsoleInterface.java" afterPath="$PROJECT_DIR$/src/main/java/ConsoleInterface.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateCustomer.java" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateCustomer.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateDeveloper.java" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateDeveloper.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateProject.java" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateProject.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteCustomer.java" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteCustomer.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteDeveloper.java" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteDeveloper.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteProject.java" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteProject.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllCustomers.java" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllCustomers.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllDevelopers.java" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllDevelopers.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllDevelopersOnProjects.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllProjects.java" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllProjects.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetJavaDevelopers.java" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetJavaDevelopers.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetMiddleDevelopers.java" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetMiddleDevelopers.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetOneProjectDevelopers.java" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetOneProjectDevelopers.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anotationServlets/update/UpdateCustomer.java" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/update/UpdateCustomer.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anotationServlets/update/UpdateDeveloper.java" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/update/UpdateDeveloper.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anotationServlets/update/UpdateProject.java" afterPath="$PROJECT_DIR$/src/main/java/anotationServlets/update/UpdateProject.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateCompaniesDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateCompaniesDAOImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateCustomersDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateCustomersDAOImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateDeveloperDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateDeveloperDAOImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateProjectsDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateProjectsDAOImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateSkillsDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateSkillsDAOImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Companies.java" afterPath="$PROJECT_DIR$/src/main/java/entities/Companies.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Customers.java" afterPath="$PROJECT_DIR$/src/main/java/entities/Customers.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Developer.java" afterPath="$PROJECT_DIR$/src/main/java/entities/Developer.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Projects.java" afterPath="$PROJECT_DIR$/src/main/java/entities/Projects.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Skills.java" afterPath="$PROJECT_DIR$/src/main/java/entities/Skills.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernateFunctionality/HibernateFactory.java" afterPath="$PROJECT_DIR$/src/main/java/hibernateFunctionality/HibernateFactory.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernateFunctionality/HibernateFunctionality.java" afterPath="$PROJECT_DIR$/src/main/java/hibernateFunctionality/HibernateFunctionality.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jdbc/Functionality.java" afterPath="$PROJECT_DIR$/src/main/java/jdbc/Functionality.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mysqlDB/1.sql" afterPath="$PROJECT_DIR$/src/main/resources/mysqlDB/1.sql" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mysqlDB/2.sql" afterPath="$PROJECT_DIR$/src/main/resources/mysqlDB/2.sql" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mysqlDB/3.sql" afterPath="$PROJECT_DIR$/src/main/resources/mysqlDB/3.sql" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mysqlDB/4.sql" afterPath="$PROJECT_DIR$/src/main/resources/mysqlDB/4.sql" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mysqlDB/addToDB.sql" afterPath="$PROJECT_DIR$/src/main/resources/mysqlDB/addToDB.sql" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mysqlDB/initDB.sql" afterPath="$PROJECT_DIR$/src/main/resources/mysqlDB/initDB.sql" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mysqlDB/populateDB.sql" afterPath="$PROJECT_DIR$/src/main/resources/mysqlDB/populateDB.sql" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/styles.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/styles.css" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/create/createCustomer.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/view/create/createCustomer.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/create/createDeveloper.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/view/create/createDeveloper.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/create/createProject.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/view/create/createProject.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/read/readAllCustomers.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/view/read/readAllCustomers.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/read/readAllDevelopersOnProjects.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/view/read/readAllDevelopersOnProjects.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/read/readAllProjectsList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/view/read/readAllProjectsList.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/read/readDevelopers.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/view/read/readDevelopers.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/read/readMenu.html" afterPath="$PROJECT_DIR$/src/main/webapp/view/read/readMenu.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/update/updateCustomer.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/view/update/updateCustomer.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/update/updateDeveloper.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/view/update/updateDeveloper.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/update/updateProject.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/view/update/updateProject.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" afterPath="$PROJECT_DIR$/target/classes/Main.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/hibernate/HibernateCompaniesDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/dao/hibernate/HibernateCompaniesDAOImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/hibernate/HibernateCustomersDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/dao/hibernate/HibernateCustomersDAOImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/hibernate/HibernateProjectsDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/dao/hibernate/HibernateProjectsDAOImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/hibernate/HibernateSkillsDAOImpl.class" afterPath="$PROJECT_DIR$/target/classes/dao/hibernate/HibernateSkillsDAOImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/hibernateFunctionality/HibernateFunctionality.class" afterPath="$PROJECT_DIR$/target/classes/hibernateFunctionality/HibernateFunctionality.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mysqlDB/1.sql" afterPath="$PROJECT_DIR$/target/classes/mysqlDB/1.sql" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mysqlDB/2.sql" afterPath="$PROJECT_DIR$/target/classes/mysqlDB/2.sql" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mysqlDB/3.sql" afterPath="$PROJECT_DIR$/target/classes/mysqlDB/3.sql" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mysqlDB/4.sql" afterPath="$PROJECT_DIR$/target/classes/mysqlDB/4.sql" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mysqlDB/initDB.sql" afterPath="$PROJECT_DIR$/target/classes/mysqlDB/initDB.sql" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mysqlDB/populateDB.sql" afterPath="$PROJECT_DIR$/target/classes/mysqlDB/populateDB.sql" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,120 +104,43 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="hibernate.cfg.xml/Hibernate" type="feb32156:DbDataSourceImpl" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="homeworkonedb@localhost [2]" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="homeworkonedb@localhost [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="homeworkonedb@localhost [2]" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="homeworkonedb: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="homeworkonedb@localhost [2]" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="homeworkonedb: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="developer_skill: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="createCustomer.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/create/createCustomer.jsp">
+      <file leaf-file-name="initDB.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mysqlDB/initDB.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="32" column="52" lean-forward="true" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
+            <state relative-caret-position="0">
+              <caret line="0" column="28" lean-forward="true" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="updateDeveloper.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updateDeveloper.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="45" column="7" lean-forward="true" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="createProject.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/create/createProject.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="updateProject.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updateProject.jsp">
+      <file leaf-file-name="populateDB.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mysqlDB/populateDB.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" column="48" lean-forward="true" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+              <caret line="36" column="51" lean-forward="false" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deleteMenu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/delete/deleteMenu.html">
+      <file leaf-file-name="addToDB.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mysqlDB/addToDB.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeleteCustomer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteCustomer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="30" column="41" lean-forward="true" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeleteDeveloper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteDeveloper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-18">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeleteProject.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteProject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="updateCustomer.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updateCustomer.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="21" column="52" lean-forward="false" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+            <state relative-caret-position="119">
+              <caret line="7" column="42" lean-forward="false" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -174,6 +166,7 @@
       <find>head</find>
       <find>container-</find>
       <find>container</find>
+      <find>hib</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -187,57 +180,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateProject.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/create/createCust.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateCustomer.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/read/readAllprojects.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/Developer.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/read/readMiddleDevelopers.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/entities/Projects.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/read/readOneProjectDevelopers.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateProjectsDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/read/readJavaDevs.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetJavaDevelopers.java" />
-        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetMiddleDevelopers.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/read/readAllProjects.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/ProjectInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllDevelopersOnProjects.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/create/createMenu.html" />
-        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetOneProjectDevelopers.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/delete/deleteProjects.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteProject.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/delete/deleteDevelopers.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllProjects.java" />
-        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllDevelopers.java" />
-        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteDeveloper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllCustomers.java" />
-        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteCustomer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entities/Customers.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/delete/deleteMenu.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/update/updateMenu.html" />
+        <option value="$PROJECT_DIR$/src/main/java/entities/Skills.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/styles.css" />
-        <option value="$PROJECT_DIR$/src/main/java/hibernateFunctionality/HibernateFunctionality.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ConsoleInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/java/jdbc/Functionality.java" />
-        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateDeveloper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/update/UpdateDeveloper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/update/UpdateProject.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/buttons.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/read/readMenu.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/read/readAllCustomers.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/read/readAllCustomersList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/create/createProject.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/create/createDeveloper.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/create/createCustomer.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/read/readAllDevelopersOnProjects.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/read/readAllProjectsList.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/read/readDevelopers.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/update/UpdateCustomer.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/create/createDeveloper.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mysqlDB/populateDB.sql" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/create/createCustomer.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/create/createProject.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/view/update/updateCustomer.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/mysqlDB/4.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/mysqlDB/3.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/mysqlDB/2.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/mysqlDB/1.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateCustomer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllCustomers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateDeveloper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllDevelopers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllDevelopersOnProjects.java" />
+        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetJavaDevelopers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetMiddleDevelopers.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/read/readMenu.html" />
+        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetOneProjectDevelopers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAmountOfDevelopersOnProjects.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/update/updateDeveloper.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/view/update/updateCustomer.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/view/update/updateProject.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateProject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllProjects.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateSkillsDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateProjectsDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateCustomersDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateCompaniesDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hibernateFunctionality/HibernateFunctionality.java" />
+        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/update/UpdateCustomer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteCustomer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/managers/DeveloperManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteDeveloper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/update/UpdateDeveloper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/managers/CustomerManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteProject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/update/UpdateProject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/anotationServlets/managers/ProjectManager.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mysqlDB/initDB.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jdbc/Functionality.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ConsoleInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mysqlDB/addToDB.sql" />
       </list>
     </option>
   </component>
@@ -282,6 +275,25 @@
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Spelling</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SpellCheckingInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -300,6 +312,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
@@ -342,8 +355,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="anotationServlets" type="462c0819:PsiDirectoryNode" />
-              <item name="create" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProjectManagementSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -351,26 +363,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="anotationServlets" type="462c0819:PsiDirectoryNode" />
-              <item name="delete" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectManagementSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="anotationServlets" type="462c0819:PsiDirectoryNode" />
-              <item name="read" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectManagementSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectManagementSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="anotationServlets" type="462c0819:PsiDirectoryNode" />
-              <item name="update" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProjectManagementSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -379,6 +373,31 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectManagementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+              <item name="skillEnums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectManagementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hibernateFunctionality" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectManagementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jdbc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProjectManagementSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -458,12 +477,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/java/project/moduleDZ/ProjectManagementSystem/src/main/java/entities/Projects.java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../cloned/goit_java9_spring" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
@@ -508,7 +526,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Smart Tomcat.Unnamed">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -649,12 +667,15 @@
       <workItem from="1522056684606" duration="6809000" />
       <workItem from="1522065510172" duration="9545000" />
       <workItem from="1522138281187" duration="22217000" />
-      <workItem from="1522218345286" duration="7140000" />
+      <workItem from="1522218345286" duration="7375000" />
+      <workItem from="1522426993704" duration="402000" />
+      <workItem from="1523350408440" duration="18514000" />
+      <workItem from="1523430133554" duration="6759000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122200000" />
+    <option name="totallyTimeSpent" value="148110000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -670,37 +691,38 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40625" sideWeight="0.5060514" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27631578" sideWeight="0.50907713" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23146747" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27631578" sideWeight="0.49394855" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18683812" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967105" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27631578" sideWeight="0.49092284" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Database Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19591528" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967105" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -711,15 +733,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateProjectsDAOImpl.java</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -728,300 +742,436 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/CreateMenu.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/create/createMenu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="71" lean-forward="false" selection-start-line="11" selection-start-column="71" selection-end-line="11" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/read/GetJavaDevelopers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllDevelopersOnProjects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/delete/deleteDevelopers.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllDevelopers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllProjects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/read/GetOneProjectDevelopers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateCustomersDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="52" column="19" lean-forward="false" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllCustomers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Customers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/fd949788/4b755cdd-9b52-409d-a30c-987808befb88/homeworkonedb.customers">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="68" lean-forward="false" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateProject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="32" column="65" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updateMenu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2448">
-          <caret line="144" column="30" lean-forward="false" selection-start-line="144" selection-start-column="30" selection-end-line="144" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/jdbc/Functionality.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1522159607827" expanded="true" signature="2359:2429" ph="insert into projects... " />
-            <marker date="1522159607827" expanded="true" signature="2492:2585" ph="insert into developers... " />
-            <marker date="1522159607827" expanded="true" signature="2647:2713" ph="insert into customers... " />
-            <marker date="1522159607827" expanded="true" signature="2779:2818" ph="delete from developers... " />
-            <marker date="1522159607827" expanded="true" signature="2891:2955" ph="delete from developer_projects... " />
-            <marker date="1522159607827" expanded="true" signature="3026:3086" ph="delete from developer_skill... " />
-            <marker date="1522159607827" expanded="true" signature="3150:3191" ph="delete from projects... " />
-            <marker date="1522159607827" expanded="true" signature="3265:3334" ph="delete from companies_projects... " />
-            <marker date="1522159607827" expanded="true" signature="3408:3478" ph="delete from customers_projects... " />
-            <marker date="1522159607827" expanded="true" signature="3543:3586" ph="delete from customers... " />
-            <marker date="1522159607827" expanded="true" signature="3650:3735" ph="update projects... " />
-            <marker date="1522159607827" expanded="true" signature="3801:3907" ph="update developers... " />
-            <marker date="1522159607827" expanded="true" signature="3972:4052" ph="update customers... " />
-            <marker date="1522159607827" expanded="true" signature="4235:4300" ph="CREATE TABLE... IF" />
-            <marker date="1522159607827" expanded="true" signature="4617:4885" ph="SELECT devel... developers" />
-            <marker date="1522159607827" expanded="true" signature="7458:7719" ph="select cost,... projects" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateDeveloper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/update/UpdateProject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/buttons.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="106" lean-forward="false" selection-start-line="12" selection-start-column="106" selection-end-line="12" selection-end-column="106" />
-          <folding />
+        <state relative-caret-position="358">
+          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/view/read/readMenu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        <state relative-caret-position="290">
+          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updateCustomer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="25" column="10" lean-forward="false" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/read/readAllDevelopersOnProjects.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updateProject.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        <state relative-caret-position="35">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/read/readAllProjectsList.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updateDeveloper.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="93" column="24" lean-forward="false" selection-start-line="93" selection-start-column="24" selection-end-line="93" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/read/readDevelopers.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="88" column="30" lean-forward="true" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateCustomer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="29" column="62" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="29" selection-end-column="62" />
-          <folding />
+        <state relative-caret-position="138">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/read/readAllCustomersList.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateDeveloper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" lean-forward="true" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+        <state relative-caret-position="262">
+          <caret line="23" column="54" lean-forward="false" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/create/CreateProject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllCustomers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllDevelopers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAllProjects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/read/readAllCustomers.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/read/GetAmountOfDevelopersOnProjects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/read/GetJavaDevelopers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/read/GetMiddleDevelopers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="60" lean-forward="false" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/read/GetOneProjectDevelopers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateSkillsDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="358">
-          <caret line="95" column="27" lean-forward="true" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/update/UpdateCustomer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="51" column="56" lean-forward="false" selection-start-line="51" selection-start-column="56" selection-end-line="51" selection-end-column="56" />
+          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateProjectsDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hibernateFunctionality/HibernateFunctionality.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
-          <folding>
-            <element signature="e#7708#7709#0" expanded="true" />
-            <element signature="e#7745#7746#0" expanded="true" />
-            <element signature="e#7827#7828#0" expanded="true" />
-            <marker date="1522159607963" expanded="true" signature="2215:2441" ph="SELECT sum(d... developers" />
-            <marker date="1522159607963" expanded="true" signature="5392:5653" ph="select cost,... projects" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ConsoleInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateDeveloperDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="33" column="20" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+        <state relative-caret-position="68">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.2.12.Final/hibernate-core-5.2.12.Final-sources.jar!/org/hibernate/Session.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Companies.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="536" column="36" lean-forward="false" selection-start-line="536" selection-start-column="36" selection-end-line="536" selection-end-column="36" />
+        <state relative-caret-position="102">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Customers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/entities/Developer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="52" column="19" lean-forward="false" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
+        <state relative-caret-position="119">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/fd949788/4b755cdd-9b52-409d-a30c-987808befb88/homeworkonedb.developers">
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/ProjectInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Projects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entities/Skills.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/managers/DeveloperManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2142">
+          <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteDeveloper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="45" lean-forward="false" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/update/UpdateDeveloper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="45" lean-forward="false" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/update/UpdateCustomer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="40" lean-forward="false" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteProject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="37" lean-forward="false" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/update/UpdateProject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="37" lean-forward="false" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/managers/ProjectManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="33" column="65" lean-forward="false" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/managers/CustomerManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteCustomer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/e12d50f0-e356-476f-9a84-2fb9bb7e43e3/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mysqlDB/1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mysqlDB/2.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mysqlDB/3.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="40" lean-forward="false" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mysqlDB/4.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hibernateFunctionality/HibernateFunctionality.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#7652#7653#0" expanded="false" />
+            <element signature="e#7689#7690#0" expanded="false" />
+            <marker date="1523371267765" expanded="true" signature="2116:2363" ph="SELECT sum(d... developers" />
+            <marker date="1523371267765" expanded="true" signature="2247:2348" ph="SELECT DISTI... " />
+            <marker date="1523371267765" expanded="true" signature="5142:5403" ph="select cost,... projects" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hibernateFunctionality/HibernateFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jdbc/Functionality.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <marker date="1523434803967" expanded="true" signature="2423:2518" ph="insert into projects... " />
+            <marker date="1523434803967" expanded="true" signature="2581:2699" ph="insert into developers... " />
+            <marker date="1523434803967" expanded="true" signature="2761:2852" ph="insert into customers... " />
+            <marker date="1523434803967" expanded="true" signature="2918:2957" ph="delete from developers... " />
+            <marker date="1523434803967" expanded="true" signature="3030:3119" ph="delete from developer_projects... " />
+            <marker date="1523434803967" expanded="true" signature="3190:3275" ph="delete from developer_skill... " />
+            <marker date="1523434803967" expanded="true" signature="3339:3380" ph="delete from projects... " />
+            <marker date="1523434803967" expanded="true" signature="3454:3548" ph="delete from companies_projects... " />
+            <marker date="1523434803967" expanded="true" signature="3622:3717" ph="delete from customers_projects... " />
+            <marker date="1523434803967" expanded="true" signature="3782:3825" ph="delete from customers... " />
+            <marker date="1523434803967" expanded="true" signature="3889:3999" ph="update projects... " />
+            <marker date="1523434803967" expanded="true" signature="4065:4196" ph="update developers... " />
+            <marker date="1523434803967" expanded="true" signature="4261:4366" ph="update customers... " />
+            <marker date="1523434803967" expanded="true" signature="4573:4638" ph="CREATE TABLE... missingValue" />
+            <marker date="1523434803967" expanded="true" signature="5018:5328" ph="SELECT devel... developers" />
+            <marker date="1523434803967" expanded="true" signature="5212:5313" ph="SELECT DISTI... " />
+            <marker date="1523434803967" expanded="true" signature="8166:8427" ph="select cost,... projects" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/fd949788/e12d50f0-e356-476f-9a84-2fb9bb7e43e3/homeworkonedb.customers">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mysqlDB/populateDB.sql">
+    <entry file="das://table:/fd949788/e12d50f0-e356-476f-9a84-2fb9bb7e43e3/homeworkonedb.developers">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/fd949788/e12d50f0-e356-476f-9a84-2fb9bb7e43e3/homeworkonedb.projects">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateCustomersDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="39" column="103" lean-forward="false" selection-start-line="39" selection-start-column="103" selection-end-line="39" selection-end-column="103" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/hibernate/HibernateCompaniesDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ConsoleInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="267" column="72" lean-forward="false" selection-start-line="267" selection-start-column="72" selection-end-line="267" selection-end-column="72" />
           <folding />
         </state>
       </provider>
@@ -1029,120 +1179,23 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/mysqlDB/initDB.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1522224319676" expanded="true" signature="50:252" ph="CREATE TABLE... developers" />
-            <marker date="1522224319676" expanded="true" signature="254:467" ph="CREATE TABLE... skills" />
-            <marker date="1522224319676" expanded="true" signature="469:619" ph="CREATE TABLE... projects" />
-            <marker date="1522224319676" expanded="true" signature="621:771" ph="CREATE TABLE... companies" />
-            <marker date="1522224319676" expanded="true" signature="773:923" ph="CREATE TABLE... customers" />
-            <marker date="1522224319676" expanded="true" signature="925:1209" ph="CREATE TABLE... developer_projects" />
-            <marker date="1522224319676" expanded="true" signature="1211:1485" ph="CREATE TABLE... developer_skill" />
-            <marker date="1522224319676" expanded="true" signature="1487:1786" ph="CREATE TABLE... companies_projects" />
-            <marker date="1522224319676" expanded="true" signature="1788:2091" ph="CREATE TABLE... customers_projects" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/fd949788/4b755cdd-9b52-409d-a30c-987808befb88/homeworkonedb.developer_skill">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/update/UpdateDeveloper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <caret line="0" column="28" lean-forward="true" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/create/createDeveloper.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="45" column="52" lean-forward="false" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/create/createProject.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/create/createCustomer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="32" column="52" lean-forward="true" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updateCustomer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="21" column="52" lean-forward="false" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updateDeveloper.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="45" column="7" lean-forward="true" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/delete/deleteMenu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteCustomer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="30" column="41" lean-forward="true" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteDeveloper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/anotationServlets/delete/DeleteProject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/delete/deleteProjects.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view/update/updateProject.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mysqlDB/populateDB.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="48" lean-forward="true" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+          <caret line="36" column="51" lean-forward="false" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mysqlDB/addToDB.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="42" lean-forward="false" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
           <folding />
         </state>
       </provider>

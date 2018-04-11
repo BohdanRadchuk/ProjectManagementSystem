@@ -4,13 +4,11 @@ import dao.SkillsDAO;
 import entities.Skills;
 import hibernateFunctionality.HibernateFactory;
 import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
 import java.util.List;
 
 public class HibernateSkillsDAOImpl implements SkillsDAO {
-
 
     @Override
     public void save(Skills skills) {

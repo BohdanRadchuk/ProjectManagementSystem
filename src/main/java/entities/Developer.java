@@ -7,38 +7,38 @@ import java.util.Set;
 
 @Entity
 @Table(name = "developers")
-public class Developer  {
+public class Developer {
 
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
-    @Column (name = "id_dev")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_dev")
     private int id;
 
-    @Column (name = "firstName")
+    @Column(name = "firstName")
     private String firstName;
 
-    @Column (name = "secondaryName")
+    @Column(name = "secondaryName")
     private String secondaryName;
 
-    @Column (name = "age")
+    @Column(name = "age")
     private int age;
 
-    @Column (name = "gender")
+    @Column(name = "gender")
     private String gender;
 
-    @Column (name = "salary")
+    @Column(name = "salary")
     private BigDecimal salary;
 
     @ManyToMany
     @JoinTable(name = "developer_projects",
-                joinColumns =  @JoinColumn (name = "id_dev"),
-                inverseJoinColumns = @JoinColumn (name = "id_project"))
+            joinColumns = @JoinColumn(name = "id_dev"),
+            inverseJoinColumns = @JoinColumn(name = "id_project"))
     private Set<Projects> projects;
 
     @ManyToMany
     @JoinTable(name = "developer_skill",
-            joinColumns =  @JoinColumn (name = "id_dev"),
-            inverseJoinColumns = @JoinColumn (name = "id_skill"))
+            joinColumns = @JoinColumn(name = "id_dev"),
+            inverseJoinColumns = @JoinColumn(name = "id_skill"))
     private Set<Skills> skills;
 
 
